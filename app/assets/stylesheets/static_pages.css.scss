@@ -2,16 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-  margin: 0 auto;
+
+.top-box{
+  position: relative;
+  background: #730E15;
+  float: left;
+  width: 80%;
+  height: 20vh;
 }
-.home {
 
-  .column {
-float: left;
-width: 20%;
+.left-box{
+  position: relative;
+  background: #d0d447;
+  height: 80vh;
+  left: 80%;
+  width: 20%;
 
+}
 
-  }
+.center-box{
+   position: absolute;
+   top: 20vh;
+   left: 20%;
+   background: #2E2F30;
+   height: 60vh;
+   width: 60%;
+}
 
+.right-box{
+  background: #1d24ff;
+  float: left;
+  width: 20%;
+  height: 80vh;
+  position: absolute;
+  top: 20vh;
+}
+
+.bottom-box{
+  position: relative;
+  left: 20%;
+  background: #999999;
+  height: 20vh;
+  width: 80%;
 }
