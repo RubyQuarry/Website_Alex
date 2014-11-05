@@ -132,6 +132,7 @@
 
 figure.effect-julia {
   background: #2f3238;
+
 }
 
 figure.effect-julia img {
@@ -214,15 +215,18 @@ figure.effect-julia:hover p {
 /*-----------------*/
 
 figure.effect-apollo {
-  background: #3498db;
+  background: #3498db url(18.jpg) no-repeat;
+  background-size: cover;  // stretches to fill entire background
+  height: 60vh;
+  width: 100%;
 }
 
-figure.effect-apollo img {
+figure.effect-apollo {
   opacity: 0.95;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale3d(1.05,1.05,1);
-  transform: scale3d(1.05,1.05,1);
+  -webkit-transform: scale3d(1.00,1.00,1);
+  transform: scale3d(1.00,1.00,1);
 }
 
 figure.effect-apollo figcaption::before {
@@ -246,7 +250,7 @@ figure.effect-apollo p {
   margin: 3em;
   padding: 0 1em;
   max-width: 150px;
-  border-right: 4px solid #fff;
+  border-right: 4px solid #db001c;
   text-align: right;
   opacity: 0;
   -webkit-transition: opacity 0.35s;
@@ -255,21 +259,30 @@ figure.effect-apollo p {
 
 figure.effect-apollo h2 {
   text-align: left;
+  color: #730E15;
 }
 
-figure.effect-apollo:hover img {
+figure.effect-apollo:hover {
   opacity: 0.6;
   -webkit-transform: scale3d(1,1,1);
   transform: scale3d(1,1,1);
 }
 
 figure.effect-apollo:hover figcaption::before {
-  -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+  -webkit-transform: scale3d(1.0,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
   transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
 }
 
-figure.effect-apollo:hover p {
+figure.effect-apollo:hover {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
+
+
+figure.effect-apollo:hover p{
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+

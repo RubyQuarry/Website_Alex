@@ -41,3 +41,8 @@ gem 'spring',        group: :development
 gem 'normalize-rails'
 
 gem 'haml-rails'
+
+
+group :development do
+  gem 'guard-livereload', require: false
+end
