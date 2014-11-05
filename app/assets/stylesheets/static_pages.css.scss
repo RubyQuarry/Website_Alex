@@ -5,7 +5,6 @@
 
 .top-box{
   position: relative;
-  background: #730E15;
   float: left;
   width: 80%;
   height: 20vh;
@@ -131,11 +130,13 @@
 /*---------------*/
 
 figure.effect-julia {
-  background: #2f3238;
-
+  background: #3498db url(19.jpg) 50% center no-repeat;
+  background-size: cover;  // stretches to fill entire background
+  height: 20vh;
+  width: 100%;
 }
 
-figure.effect-julia img {
+figure.effect-julia  {
 
   -webkit-transition: opacity 1s, -webkit-transform 1s;
   transition: opacity 1s, transform 1s;
@@ -148,15 +149,18 @@ figure.effect-julia figcaption {
 }
 
 figure.effect-julia h2 {
-  position: relative;
-  padding: 0.5em 0;
+  float: right;
+  padding: 0.2em 0;
+  color: #B00100;
+  border: 4px solid #db001c;
+
 }
 
 figure.effect-julia p {
   display: inline-block;
   margin: 0 0 0.25em;
   padding: 0.4em 1em;
-  background: rgba(255,255,255,0.9);
+  background: rgba(0, 241, 218, 0.90);
   color: #2f3238;
   text-transform: none;
   font-weight: 500;
@@ -197,10 +201,7 @@ figure.effect-julia:hover p:nth-of-type(3) {
   transition-delay: 0.1s;
 }
 
-figure.effect-julia:hover img {
-  opacity: 0.4;
-  -webkit-transform: scale3d(1.1,1.1,1);
-  transform: scale3d(1.1,1.1,1);
+figure.effect-julia:hover  {
 }
 
 figure.effect-julia:hover p {
@@ -215,7 +216,7 @@ figure.effect-julia:hover p {
 /*-----------------*/
 
 figure.effect-apollo {
-  background: #3498db url(18.jpg) no-repeat;
+  background: #3498db url(17.jpg)  bottom center no-repeat;
   background-size: cover;  // stretches to fill entire background
   height: 60vh;
   width: 100%;
@@ -235,7 +236,7 @@ figure.effect-apollo figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255,255,255,0.5);
+  background: rgba(29, 36, 255, 0.50);
   content: '';
   -webkit-transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
@@ -258,8 +259,8 @@ figure.effect-apollo p {
 }
 
 figure.effect-apollo h2 {
-  text-align: left;
-  color: #730E15;
+  text-align: center;
+  color: #db001c;
 }
 
 figure.effect-apollo:hover {
@@ -286,3 +287,78 @@ figure.effect-apollo:hover p{
   transition-delay: 0.1s;
 }
 
+
+
+
+/*---------------*/
+/***** Dexter *****/
+/*---------------*/
+
+figure.effect-dexter {
+  background: -webkit-linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
+  background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
+  background:  url(24.jpg)  bottom center no-repeat;
+  background-size: cover;  // stretches to fill entire background
+  height: 80vh;
+  width: 100%;
+}
+
+figure.effect-dexter  {
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+
+  figcaption h2{
+
+    text-align: center;
+  }
+}
+
+
+
+figure.effect-dexter:hover  {
+  opacity: 0.9;
+}
+
+figure.effect-dexter figcaption::after {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  left: 10px;
+  width: 17vw;
+  height: -webkit-calc(50% - 30px);
+  height: calc(50% - 30px);
+  border: 7px solid #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+figure.effect-dexter:hover figcaption::after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-dexter figcaption {
+  padding: 3em;
+  text-align: left;
+}
+
+figure.effect-dexter p {
+  position: absolute;
+  right: 60px;
+  bottom: 95px;
+  left: 60px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100px,0);
+  transform: translate3d(0,-100px,0);
+}
+
+figure.effect-dexter:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
