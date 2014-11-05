@@ -72,7 +72,7 @@
 }
 
 .grid figure figcaption {
-  padding: 2em;
+  padding: 2em 0 ;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.25em;
@@ -361,4 +361,172 @@ figure.effect-dexter:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+
+
+
+/*---------------*/
+/***** Sarah *****/
+/*---------------*/
+
+figure.effect-sarah {
+  background: url(24.jpg)  bottom center no-repeat;
+  background-size: cover;  // stretches to fill entire background
+  height: 20vh;
+  width: 100%;
+}
+
+figure.effect-sarah  {
+  max-width: none;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  figcaption{
+    padding: .5em 0 .2em .3em;
+  }
+}
+
+figure.effect-sarah:hover  {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah figcaption {
+  text-align: left;
+}
+
+figure.effect-sarah h2 {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  padding: 0.5em 0;
+  margin-right: 3em;
+}
+
+figure.effect-sarah h2::after, {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #00f72e;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah:hover h2::after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah p {
+  padding: 2em 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/*-----------------*/
+/***** Steve *****/
+/*-----------------*/
+
+figure.effect-steve {
+  z-index: auto;
+  overflow: visible;
+  background: #3498db url(19.jpg) 50% center no-repeat;
+  background-size: cover;  // stretches to fill entire background
+  height: 80vh;
+  width: 100%;
+}
+
+figure.effect-steve:before,
+figure.effect-steve h2:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  content: '';
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-steve:before {
+  box-shadow: 0 3px 30px rgba(0,0,0,0.8);
+  opacity: 0;
+}
+
+figure.effect-steve figcaption {
+  z-index: 1;
+}
+
+figure.effect-steve  {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: perspective(1000px) translate3d(0,0,0);
+  transform: perspective(1000px) translate3d(0,0,0);
+}
+
+figure.effect-steve h2,
+figure.effect-steve p {
+  background: #fff;
+  color: #2d434e;
+}
+
+figure.effect-steve h2 {
+  position: relative;
+  margin-top: 2em;
+  padding: 0.25em;
+}
+
+figure.effect-steve h2:before {
+  box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+figure.effect-steve p {
+  margin-top: 1em;
+  padding: 0.5em;
+  font-weight: 800;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(0.9,0.9,1);
+  transform: scale3d(0.9,0.9,1);
+}
+
+figure.effect-steve:hover:before {
+  opacity: 1;
+}
+
+figure.effect-steve:hover  {
+  -webkit-transform: perspective(1000px) translate3d(0,0,0px);
+  transform: perspective(1000px) translate3d(0,0,0px);
+}
+
+figure.effect-steve:hover h2:before {
+  opacity: 0;
+}
+
+figure.effect-steve:hover p {
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
 }
