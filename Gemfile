@@ -42,6 +42,9 @@ gem 'normalize-rails'
 
 gem 'haml-rails'
 
+gem 'font-awesome-rails' # for using font-awesome icons
+
+
 
 group :development do
   gem 'guard-livereload', require: false
