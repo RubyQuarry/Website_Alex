@@ -2,6 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+@mixin background-picture-panel($pic, $height, $width, $top-pic:bottom, $wide-pic: center)
+{
+  background: #3498db url($pic) $top-pic $wide-pic no-repeat;
+  background-size: cover;  // stretches to fill entire background
+  height: $height;
+  width: $width;
+  color: #000000;
+}
+
+
+body{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
 .top-box{
   position: relative;
   float: left;
@@ -126,22 +141,38 @@
 /* Individual effects */
 
 /*-----------------*/
-/***** Apollo *****/
+/***** Apollo ***** CENTER/
 /*-----------------*/
 
 figure.effect-apollo {
-  background: #3498db url(17.jpg)  bottom center no-repeat;
-  background-size: cover;  // stretches to fill entire background
-  height: 60vh;
-  width: 100%;
-}
-
-figure.effect-apollo {
+  @include background-picture-panel("AJFullFace.jpg", 60vh, 100%);
   opacity: 0.95;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale3d(1.00,1.00,1);
   transform: scale3d(1.00,1.00,1);
+
+  p {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 3em;
+    padding: 0 1em;
+    max-width: 150px;
+    color: #000000;
+    border-right: 4px solid #db001c;
+    text-align: right;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+  }
+  h2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    color: #db001c;
+  }
 }
 
 figure.effect-apollo figcaption::before {
@@ -156,26 +187,11 @@ figure.effect-apollo figcaption::before {
   transition: transform 0.6s;
   -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
   transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+
+
+
 }
 
-figure.effect-apollo p {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin: 3em;
-  padding: 0 1em;
-  max-width: 150px;
-  border-right: 4px solid #db001c;
-  text-align: right;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
-
-figure.effect-apollo h2 {
-  text-align: center;
-  color: #db001c;
-}
 
 figure.effect-apollo:hover {
   opacity: 0.6;
@@ -211,21 +227,31 @@ figure.effect-apollo:hover p{
 figure.effect-dexter {
   background: -webkit-linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
   background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
-  background:  url(24.jpg)  bottom center no-repeat;
-  background-size: cover;  // stretches to fill entire background
-  height: 80vh;
-  width: 100%;
-}
-
-figure.effect-dexter  {
+  @include background-picture-panel("AJLeft.jpg", 80vh, 100%, bottom, left);
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 
-   h2{
+  h2{
     position: absolute;
     left: 10%;
     text-align: center;
     color: #0f0f0f;
+  }
+
+  p {
+    padding: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 22vh;
+    color: #000000;
+
+    white-space: pre-line;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100px,0);
+    transform: translate3d(0,-100px,0);
   }
 }
 
@@ -242,7 +268,7 @@ figure.effect-dexter figcaption::after {
   width: auto;
   height: -webkit-calc(50% - 30px);
   height: calc(50% - 30px);
-  border: 2px solid #fff;
+  border: 4px solid #3b86ff;
   content: '';
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -260,19 +286,6 @@ figure.effect-dexter figcaption {
   text-align: left;
 }
 
-figure.effect-dexter p {
-  padding: 2px;
-  position: absolute;
-  left: 0;
-  bottom: 22vh;
-  white-space: pre-line;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,-100px,0);
-  transform: translate3d(0,-100px,0);
-}
 
 figure.effect-dexter:hover p {
   opacity: 1;
@@ -291,10 +304,18 @@ figure.effect-dexter:hover p {
 figure.effect-steve {
   z-index: auto;
   overflow: visible;
-  background: #3498db url(19.jpg) 50% center no-repeat;
-  background-size: cover;  // stretches to fill entire background
-  height: 80vh;
-  width: 100%;
+  @include background-picture-panel("AJRight.jpg", 80vh, 100%, center, center);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: perspective(1000px) translate3d(0,0,0);
+  transform: perspective(1000px) translate3d(0,0,0);
+
+  h2 {
+    position: relative;
+    margin-top: 2em;
+    padding: 0.25em;
+  }
 }
 
 figure.effect-steve:before,
@@ -321,13 +342,6 @@ figure.effect-steve figcaption {
   z-index: 1;
 }
 
-figure.effect-steve  {
-  opacity: 1;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: perspective(1000px) translate3d(0,0,0);
-  transform: perspective(1000px) translate3d(0,0,0);
-}
 
 figure.effect-steve h2,
 figure.effect-steve p {
@@ -335,11 +349,6 @@ figure.effect-steve p {
   color: #2d434e;
 }
 
-figure.effect-steve h2 {
-  position: relative;
-  margin-top: 2em;
-  padding: 0.25em;
-}
 
 figure.effect-steve h2:before {
   box-shadow: 0 1px 10px rgba(0,0,0,0.5);
@@ -384,27 +393,23 @@ figure.effect-steve:hover p {
 /*-----------------*/
 
 figure.effect-selena {
-
-  background: #00f72e url(21.jpg)   center no-repeat;
-  background-size: cover;  // stretches to fill entire background
-  height: 20vh;
-  width: 100%;}
-
-figure.effect-selena  {
+  @include background-picture-panel("AJBottom.jpg", 20vh, 100%, center, center);
   opacity: 0.95;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-}
 
-figure.effect-selena:hover  {
-  -webkit-transform: scale3d(0.99,0.95,1);
-  transform: scale3d(0.99,0.95,1);
+  &:hover {
+    -webkit-transform: scale3d(0.99, 0.95, 1);
+    transform: scale3d(0.99, 0.95, 1);
+  }
 }
 
 figure.effect-selena h2 {
+  padding-left: 10px;
   color: #30a2ff;
+  text-align: left;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
   -webkit-transform: translate3d(0,20px,0);
@@ -412,7 +417,9 @@ figure.effect-selena h2 {
 }
 
 figure.effect-selena p {
-  color: #30a2ff;
+  padding-left: 10px;
+  text-align: left;
+  color: #3b86ff;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -448,19 +455,40 @@ figure.effect-selena:hover p {
 figure.effect-winston {
   padding: 0;
   margin: 0;
-  background: #162633 url(16.jpg)  bottom center no-repeat;
-  background-size: cover;
-  height: 20vh;
-  width: 100%;
-  text-align: left;
-}
+  @include background-picture-panel("AJTop.jpg", 20vh, 100%, center, center);
+  text-align: right;
 
-figure.effect-winston  {
   -webkit-transition: opacity 0.45s;
   transition: opacity 0.45s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
+  p {
+    position: absolute;
+    right: 10%;
+    text-align: right;
+    bottom: 0;
+    padding: 0 1.5em 1% 0;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 10px;
+    color: #3b86ff;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,40px,0);
+    transform: translate3d(0,40px,0);
+  }
+
+  &:hover  {
+    opacity: 0.97;
+  }
 }
+
+
 
 figure.effect-winston figcaption::before {
   position: absolute;
@@ -472,24 +500,9 @@ figure.effect-winston figcaption::before {
   content: '';
 }
 
-figure.effect-winston h2 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  padding-left: 20px;
-  color: #3b86ff;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,40px,0);
-  transform: translate3d(0,40px,0);
-}
 
-figure.effect-winston p {
-  position: absolute;
-  right: 50%;
-  bottom: 0;
-  padding: 0 1.5em 1% 0;
-}
+
+
 
 figure.effect-winston a {
   margin: 0 10px;
@@ -508,10 +521,6 @@ figure.effect-winston p a i {
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(0,30px,0);
   transform: translate3d(0,30px,0);
-}
-
-figure.effect-winston:hover  {
-  opacity: 0.97;
 }
 
 figure.effect-winston:hover h2 {
