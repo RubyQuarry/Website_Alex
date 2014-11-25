@@ -55,7 +55,6 @@ namespace :deploy do
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
-      execute('rails s')
     end
   end
 
