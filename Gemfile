@@ -44,6 +44,7 @@ gem 'haml-rails'
 
 gem 'font-awesome-rails' # for using font-awesome icons
 
+gem 'unicorn'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -54,8 +55,8 @@ group :development, :test do
   gem 'guard-livereload', require: false
 end
 
-
 group :development do
   gem 'capistrano',  '~> 3.1'
   gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano3-unicorn'
 end
