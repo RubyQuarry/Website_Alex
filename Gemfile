@@ -46,6 +46,13 @@ gem 'font-awesome-rails' # for using font-awesome icons
 
 
 
-group :development do
+
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'guard-rspec'
   gem 'guard-livereload', require: false
 end

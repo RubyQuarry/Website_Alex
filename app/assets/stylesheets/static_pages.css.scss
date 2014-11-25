@@ -25,7 +25,7 @@ body{
   background: #6d45ff;
 }
 
-.left-box{
+.right-box{
   position: relative;
   background: #d0d447;
   height: 80vh;
@@ -43,7 +43,7 @@ body{
    width: 60%;
 }
 
-.right-box{
+.left-box{
   background: #1d24ff;
   float: left;
   width: 20%;
@@ -389,7 +389,7 @@ figure.effect-steve:hover p {
 
 
 /*-----------------*/
-/***** Selena *****/
+/***** Selena *****/ // Bottom
 /*-----------------*/
 
 figure.effect-selena {
@@ -436,6 +436,7 @@ figure.effect-selena:hover h2 {
 
 figure.effect-selena:hover p {
   opacity: 1;
+  color: #27248F;
   -webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
   transform: perspective(1000px) rotate3d(1,0,0,0);
 }
@@ -449,7 +450,7 @@ figure.effect-selena:hover p {
 
 
 /*-----------------*/
-/***** Winston *****/
+/***** Winston *****/ // TOP
 /*-----------------*/
 
 figure.effect-winston {
@@ -476,7 +477,7 @@ figure.effect-winston {
     padding: 0;
     text-align: right;
     padding-right: 10px;
-    color: #3b86ff;
+    color: #FF6F4C;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate3d(0,40px,0);
@@ -512,7 +513,7 @@ figure.effect-winston a {
 
 figure.effect-winston a:hover,
 figure.effect-winston a:focus {
-  color: #00f1da;
+  color: #07E885;
 }
 
 figure.effect-winston p a i {
