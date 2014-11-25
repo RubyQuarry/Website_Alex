@@ -45,9 +45,6 @@ gem 'haml-rails'
 gem 'font-awesome-rails' # for using font-awesome icons
 
 
-
-
-
 group :development, :test do
   gem 'rspec-rails'
   gem 'better_errors'
