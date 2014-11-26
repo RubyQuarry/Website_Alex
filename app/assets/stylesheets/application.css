@@ -21,6 +21,18 @@
     box-sizing: border-box;
 }
 
+.section {
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.teal { background: #0FBFBF; color: #fff; }
+.gray { background: #5b6869; color: #fff; }
+.yellow { background: #e8b968; color:#5b6869; }
+.red { background: #F85D5D; color: #fff; }
+.white { background: #fff; color: #5b6869; padding-top: 25px; padding-bottom: 25px; }
 
 
 
@@ -84,6 +96,7 @@
     display: block;
     text-decoration: none;
     padding: 15px 44px;
+    font-weight: 900;
     position: relative;
 }
 #cssmenu ul > li > a:hover {

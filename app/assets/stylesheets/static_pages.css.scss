@@ -13,6 +13,13 @@
 }
 
 
+
+
+.footer{
+
+  
+}
+
 body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -152,6 +159,14 @@ figure.effect-apollo {
   -webkit-transform: scale3d(1.00,1.00,1);
   transform: scale3d(1.00,1.00,1);
 
+  h2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    color: #E81500;
+  }
+
   p {
     position: absolute;
     right: 0;
@@ -166,13 +181,7 @@ figure.effect-apollo {
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
   }
-  h2 {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    text-align: center;
-    color: #db001c;
-  }
+
 }
 
 figure.effect-apollo figcaption::before {
@@ -235,7 +244,7 @@ figure.effect-dexter {
     position: absolute;
     left: 10%;
     text-align: center;
-    color: #0f0f0f;
+    color: #002EFF;
   }
 
   p {
@@ -312,6 +321,7 @@ figure.effect-steve {
   transform: perspective(1000px) translate3d(0,0,0);
 
   h2 {
+    color: #526FFF;
     position: relative;
     margin-top: 2em;
     padding: 0.25em;
@@ -323,7 +333,6 @@ figure.effect-steve h2:before {
   position: absolute;
   top: 0;
   left: 0;
-
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -408,7 +417,7 @@ figure.effect-selena {
 
 figure.effect-selena h2 {
   padding-left: 10px;
-  color: #30a2ff;
+  color: #31E800;
   text-align: left;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -419,7 +428,7 @@ figure.effect-selena h2 {
 figure.effect-selena p {
   padding-left: 10px;
   text-align: left;
-  color: #3b86ff;
+  color: #0037FF;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -477,7 +486,7 @@ figure.effect-winston {
     padding: 0;
     text-align: right;
     padding-right: 10px;
-    color: #FF6F4C;
+    color: #FF7A00;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate3d(0,40px,0);
