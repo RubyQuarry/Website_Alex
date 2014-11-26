@@ -5,7 +5,7 @@
 
 @mixin background-picture-panel($pic, $height, $width, $top-pic:bottom, $wide-pic: center)
 {
-  background: #3498db url($pic) $top-pic $wide-pic no-repeat;
+  background: #3498db url(asset-path($pic)) $top-pic $wide-pic no-repeat;
   background-size: cover;  // stretches to fill entire background
   height: $height;
   width: $width;
