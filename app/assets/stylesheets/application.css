@@ -10,15 +10,16 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require share-style
  *= require_self
  *= require normalize-rails
  *= require_tree .
  */
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .section {
@@ -37,7 +38,9 @@
 
 
 
-
+.footer{
+  margin: 50px;
+}
 
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:500);

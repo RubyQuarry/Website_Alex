@@ -1,0 +1,104 @@
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #eff0f1;
+}
+
+.container {
+  width: 25em;
+  margin: 0 auto 3em auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.row {
+  margin: 0.5em 0;
+  float: left;
+  clear: both;
+}
+.row i {
+  cursor: pointer;
+  display: inline-block;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+.row:first-child {
+  background: #f8f8f8;
+  padding: 0.5em 0;
+  border-radius: 8px;
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.row:first-child i {
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #fff;
+  padding: 0.5em 1em;
+  margin: 0;
+  text-shadow: 1px 1px 0 white;
+}
+.row:first-child i:hover {
+  color: #34495e !important;
+}
+
+.row:nth-child(1) {
+  background: transparent;
+  margin-top: 2em !important;
+}
+.row:nth-child(1) i {
+  color: #34495e;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 0.5em;
+  position: relative;
+  background: transparent;
+}
+.row:nth-child(1) i:hover {
+  top: -2px;
+  border-radius: 50%;
+  color: white !important;
+}
+.row:nth-child(1) i:not(:first-child) {
+  margin-left: 1em;
+}
+.row:nth-child(1) i:nth-child(1) {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+.row:nth-child(1) i:nth-child(2) {
+  color: #00a0d1;
+  border-color: #00a0d1;
+}
+.row:nth-child(1) i:nth-child(3) {
+  color: #db4a39;
+  border-color: #db4a39;
+}
+.row:nth-child(1) i:nth-child(4) {
+  color: #c8232c;
+  border-color: #c8232c;
+}
+.row:nth-child(1) i:nth-child(5) {
+  color: #ea4c89;
+  border-color: #ea4c89;
+}
+.row:nth-child(1) i:nth-child(1):hover {
+  background: #3b5998;
+}
+.row:nth-child(1) i:nth-child(2):hover {
+  background: #00a0d1;
+}
+.row:nth-child(1) i:nth-child(3):hover {
+  background: #db4a39;
+}
+.row:nth-child(1) i:nth-child(4):hover {
+  background: #c8232c;
+}
+.row:nth-child(1) i:nth-child(5):hover {
+  background: #ea4c89;
+}
