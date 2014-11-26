@@ -23,7 +23,7 @@
           %span
             Alex
         %p I live, I laugh, I learn
-        %a{ href: "#" } View more
+        %a{ href: "oeuoue" } View more
 
 
 
@@ -66,43 +66,61 @@
 
 = render template: 'layouts/header'
 
-%div.teal.space-grey
+
+%div.teal
   %div.center-section
     ABOUT
-  %hr
+  %hr#about
   %div.about
     %div
       %p
         I am runner at heart who practices the art of self mastery.
+        Here you will not find any magical information that will save your life
+        but what you may find is a small seed of help.  With this help comes hope
+        and with ambition you can churn that seed into a tree of your own contribution
+        to the world.
 
-
-%section
-  %aside Sidebar
-  %aside Sidebar
-  %aside Sidebar
 
 %div.section.red
-  - 20.times do |a|
-    %p
-      hello world
+  %section
+    %aside
+      %div#centered
+        %i.fa.fa-5x.fa-mobile
+      %div#work
+        %h2
+          App Development
+        %p
+          I enjoy connecting others from our pocket pardise.  I previously started out
+          with Windows Phone development and have progressed to iOS.
+    %aside
+      %div#centered
+        %i.fa.fa-5x.fa-microphone
+      %div#work
+        %h2
+          Voice
+        %p
+          I try to channel my inner Morgan Freeman voice with podcasts and Youtube videos of
+          my learnings in (mostly) Computer Science.
+    %aside
+      %div#centered
+        %i.fa.fa-5x.fa-location-arrow
+      %div#work
+        %h2
+          Travel
+        %p
+          I want to travel everywhere.  Inspiration can strike at anytime.
+    %aside
+      %div#centered
+        %i.fa.fa-5x.fa-flask
+      %div#work
+        %h2
+          Experimental
+        %p
+          I am always looking to invest in new people, make new friends, and
+          make more mistakes.
 
 
-%div#owl-example.owl-carousel.section.roller
-  %div
-    =image_tag("blogger.jpg")
-  %div
-    =image_tag("Android.png")
-  %div Your Content
-  %div Your Content
-  %div Your Content
-  %div Your Content
-  %div Your Content
 
-
-%div.section.gray
-  - 20.times do |a|
-    %p
-      hello world
 
 .footer
   .row
