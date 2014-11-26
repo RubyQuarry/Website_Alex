@@ -101,6 +101,8 @@ GEM
     jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (5.0.0)
+      railties (>= 3.2.16)
     json (1.8.1)
     kgio (2.9.2)
     libv8 (3.16.14.7)
@@ -117,7 +119,7 @@ GEM
       railties (>= 3.0.0, < 5.0.0)
     method_source (0.8.2)
     mime-types (2.4.3)
-    minitest (5.4.2)
+    minitest (5.4.3)
     multi_json (1.10.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -153,7 +155,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
-    rake (10.3.2)
+    rake (10.4.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -240,6 +242,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
+  jquery-ui-rails
   meta_request
   normalize-rails
   rails (= 4.1.6)

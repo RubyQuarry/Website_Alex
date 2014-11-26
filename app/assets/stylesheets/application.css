@@ -11,6 +11,9 @@
  * file per style scope.
  *
  *= require share-style
+ *= require owl.carousel
+ *= require jquery-ui
+ *= require owl.theme
  *= require_self
  *= require normalize-rails
  *= require_tree .
@@ -38,8 +41,9 @@
 
 
 
-.footer{
-  margin: 50px;
+.roller{
+  margin: 0 auto;
+  width: 50%;
 }
 
 
