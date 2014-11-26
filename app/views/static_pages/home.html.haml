@@ -67,10 +67,10 @@
 = render template: 'layouts/header'
 
 
-%div.teal
+%div.section.black
   %div.center-section
-    ABOUT
-  %hr#about
+    About
+  %hr#about_hr
   %div.about
     %div
       %p
@@ -81,7 +81,10 @@
         to the world.
 
 
-%div.section.red
+%div.section.gray
+  %div.center-section
+    Overview
+  %hr#overview_hr
   %section
     %aside
       %div#centered
@@ -119,6 +122,44 @@
           I am always looking to invest in new people, make new friends, and
           make more mistakes.
 
+
+%div.section.green
+  %div.center-section
+    Curriculum Vitae
+  %hr#about_hr
+  %div.about
+    %div
+      %p
+        This is my resume if your interested.
+    %div#resume
+      =link_to( image_path("AlexNortonResume.pdf", target: "_blank")) do
+        %i.fa.fa-5x.fa-file-pdf-o
+
+%div.section.green4
+  %div.center-section
+    About
+  %hr#about_hr
+  %div.about
+    %div
+      %p
+        I am runner at heart who practices the art of self mastery.
+        Here you will not find any magical information that will save your life
+        but what you may find is a small seed of help.  With this help comes hope
+        and with ambition you can churn that seed into a tree of your own contribution
+        to the world.
+
+%div.section.green5
+  %div.center-section
+    About
+  %hr#about_hr
+  %div.about
+    %div
+      %p
+        I am runner at heart who practices the art of self mastery.
+        Here you will not find any magical information that will save your life
+        but what you may find is a small seed of help.  With this help comes hope
+        and with ambition you can churn that seed into a tree of your own contribution
+        to the world.
 
 
 

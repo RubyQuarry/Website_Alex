@@ -30,21 +30,34 @@ aside {
 
 hr{
   @include center(960px);
-  border: 2px solid rgba(70, 192, 229, 0.8);
+}
+
+#about_hr{
+  border: 1px solid rgba(70, 192, 229, 0.8);
+}
+
+#overview_hr{
+  border: 1px solid rgba(22, 24, 25, 0.8);
+}
+
+#resume_hr{
+  border: 1px solid rgba(22, 24, 25, 0.8);
 }
 
 #centered{
   text-align: center;
+  i{
+    padding-top: 10px;
+    color: rgb(52, 132, 210);
+  }
 }
-i{
-  padding-top: 10px;
-  color: #01122d;
-}
+
+
 
 .center-section{
   padding: 20px 0 0 0;
   margin: 0 auto;
-  width: 100px;
+  width: 200px;
   text-align: center;
   font-weight: 900;
   font-size: 1.8vw;
@@ -56,11 +69,18 @@ i{
 }
 
 #work{
+
   p, h2{
-    color: #000000;
+    color: rgb(52, 132, 210);
     margin: 5px 0;
     text-align: center;
   }
+}
+
+#resume{
+  text-align: center;
+  color: #272b74;
+  @include center(200px);
 }
 
 * {
@@ -71,20 +91,25 @@ i{
 
 
 .section {
-  padding: 10px;
+  padding: 40px 10px;
   margin: 0 auto;
   width: 100%;
   height: auto;
 }
 
 .teal { background: #1e1e1e; color: #fff; }
-.gray { background: #5b6869; color: #fff; }
+.gray { background: #56cec7; color: #fff; }
 .yellow { background: #e8b968; color:#5b6869; }
 .red { background: #F85D5D; color: #fff; }
 .white { background: #fff; color: #5b6869; padding-top: 25px; padding-bottom: 25px; }
 .space-gray{ background: #571f8e; }
-
-
+.green { background: #71d7d1; }
+.blue { background: rgb(52, 132, 210) }
+.black{ background: #3ac5bd; color: #343434;}
+.green4{ background: #8ddfdb; }
+.green5{ background: #a9e8e4; }
+.green6{ background: #c5f0ed; }
+.green6{ background: #e2f7f6; }
 
 .roller{
   margin: 0 auto;
