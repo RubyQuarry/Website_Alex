@@ -59,3 +59,7 @@ group :development do
   gem 'capistrano-rails', '~> 1.1'
   gem 'capistrano3-unicorn'
 end
+
+group :production do
+  gem 'rails_12factor', '0.0.2'
+end
