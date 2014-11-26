@@ -98,6 +98,8 @@ GEM
     jbuilder (2.2.4)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
+    jeet (6.1.2)
+      sass (~> 3.2)
     jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
@@ -241,6 +243,7 @@ DEPENDENCIES
   guard-rspec
   haml-rails
   jbuilder (~> 2.0)
+  jeet
   jquery-rails
   jquery-ui-rails
   meta_request

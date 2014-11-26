@@ -16,8 +16,40 @@
  *= require owl.theme
  *= require_self
  *= require normalize-rails
+ *= jeet/index
  *= require_tree .
  */
+@import 'jeet/index';
+
+section {
+  @include center(960px);
+}
+aside {
+  @include column(1/3);
+}
+
+hr{
+  @include center(960px);
+  border: 2px solid rgba(70, 192, 229, 0.8);
+}
+
+.center-section{
+  padding: 20px 0 0 0;
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.8vw;
+}
+
+.about{
+  @include center(940px);
+  padding: 10px 0;
+  div{
+    p{
+    }
+  }
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -32,12 +64,12 @@
   height: auto;
 }
 
-.teal { background: #0FBFBF; color: #fff; }
+.teal { background: #1e1e1e; color: #fff; }
 .gray { background: #5b6869; color: #fff; }
 .yellow { background: #e8b968; color:#5b6869; }
 .red { background: #F85D5D; color: #fff; }
 .white { background: #fff; color: #5b6869; padding-top: 25px; padding-bottom: 25px; }
-
+.space-gray{ background: #571f8e;}
 
 
 
@@ -45,13 +77,17 @@
   margin: 0 auto;
   width: 50%;
 
+ img{
+    max-height: 200px;
+    max-width: 200px;
+  }
 }
 
-.roller img{
-  max-height: 200px;
-  max-width: 200px;
+.footer{
+  @include center(400px);
+  margin: 0 auto;
+  width: 20%;
 }
-
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:500);
 /* 2f4b87 */

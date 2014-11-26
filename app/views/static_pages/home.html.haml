@@ -66,8 +66,22 @@
 
 = render template: 'layouts/header'
 
+%div.teal.space-grey
+  %div.center-section
+    ABOUT
+  %hr
+  %div.about
+    %div
+      %p
+        I am runner at heart who practices the art of self mastery.
 
-%div.section.teal
+
+%section
+  %aside Sidebar
+  %aside Sidebar
+  %aside Sidebar
+
+%div.section.red
   - 20.times do |a|
     %p
       hello world
@@ -90,7 +104,7 @@
     %p
       hello world
 
-.container
+.footer
   .row
     %i.fa.fa-github
     %i.fa.fa-linkedin
