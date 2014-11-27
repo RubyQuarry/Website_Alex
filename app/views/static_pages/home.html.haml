@@ -64,10 +64,7 @@
         %p You never know whats inside you.
 
 
-= render template: 'layouts/header'
-
-
-%div.section.black
+%div.section.blue1
   %div.center-section
     About
   %hr#about_hr
@@ -81,7 +78,7 @@
         to the world.
 
 
-%div.section.gray
+%div.section.blue2
   %div.center-section
     Overview
   %hr#overview_hr
@@ -123,19 +120,16 @@
           make more mistakes.
 
 
-%div.section.green
+%div.section.blue3
   %div.center-section
-    Curriculum Vitae
+    Curriculum Vitae - Resume
   %hr#about_hr
   %div.about
-    %div
-      %p
-        This is my resume if your interested.
     %div#resume
-      =link_to( image_path("AlexNortonResume.pdf", target: "_blank")) do
+      =link_to( image_path("AlexNortonResume.pdf")) do
         %i.fa.fa-5x.fa-file-pdf-o
 
-%div.section.green4
+%div.section.blue4
   %div.center-section
     About
   %hr#about_hr
@@ -148,7 +142,7 @@
         and with ambition you can churn that seed into a tree of your own contribution
         to the world.
 
-%div.section.green5
+%div.section.blue5
   %div.center-section
     About
   %hr#about_hr

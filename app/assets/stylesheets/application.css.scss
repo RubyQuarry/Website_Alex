@@ -33,7 +33,7 @@ hr{
 }
 
 #about_hr{
-  border: 1px solid rgba(70, 192, 229, 0.8);
+  border: 1px solid #3f76b3;
 }
 
 #overview_hr{
@@ -48,7 +48,7 @@ hr{
   text-align: center;
   i{
     padding-top: 10px;
-    color: rgb(52, 132, 210);
+    color: #0e0f25;
   }
 }
 
@@ -57,7 +57,7 @@ hr{
 .center-section{
   padding: 20px 0 0 0;
   margin: 0 auto;
-  width: 200px;
+  width: 380px;
   text-align: center;
   font-weight: 900;
   font-size: 1.8vw;
@@ -66,12 +66,13 @@ hr{
 .about{
   @include center(940px);
   padding: 10px 0 50px 0;
+  text-align: center;
 }
 
 #work{
 
   p, h2{
-    color: rgb(52, 132, 210);
+    color: #0e0f25;
     margin: 5px 0;
     text-align: center;
   }
@@ -79,8 +80,17 @@ hr{
 
 #resume{
   text-align: center;
-  color: #272b74;
   @include center(200px);
+  a{
+    i{
+      color: #b52828;
+      &:hover{
+        color: #000000;
+      }
+    }
+
+
+  }
 }
 
 * {
@@ -111,6 +121,15 @@ hr{
 .green6{ background: #c5f0ed; }
 .green6{ background: #e2f7f6; }
 
+
+
+.blue1{ background: #cadbee; }
+.blue2{ background: #9fbee0; }
+.blue3{ background: #76a1d1; }
+.blue4{ background: #4c84c1; }
+.blue5{ background: #3f76b3; }
+
+// for slideshow
 .roller{
   margin: 0 auto;
   width: 50%;
