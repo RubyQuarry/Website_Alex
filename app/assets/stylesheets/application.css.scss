@@ -15,7 +15,6 @@
  *= require owl.theme
  *= require_self
  *= require normalize-rails
- *= jeet/index
  *= require_tree .
  */
 @import 'jeet/index';
