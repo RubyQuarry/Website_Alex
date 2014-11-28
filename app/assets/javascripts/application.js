@@ -17,16 +17,7 @@
 
 
 $(function(){
-    // Check the initial Poistion of the Sticky Header
-    var stickyHeaderTop = $('#cssmenu').offset().top;
-
-    $(window).scroll(function(){
-        if( $(window).scrollTop() > stickyHeaderTop ) {
-            $('#cssmenu').css({position: 'fixed', top: '0px'});
-        } else {
-            $('#cssmenu').css({position: 'static', top: '0px'});
-        }
-    });
+    
 });
 
 

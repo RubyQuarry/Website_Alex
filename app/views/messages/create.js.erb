@@ -1,0 +1,8 @@
+<% if @message.new_record?  %>
+  <% @message.errors.keys.do |error| %>
+    $('message_<%= error %>').effect('highlight', { color: 'red' }, 2000);
+  <% end %>
+<% else %>
+  $('form#new_message').effect('highlight', { color: rgb(108, 246, 84) }, 2000);
+  $('form#new_message').trigger("reset");
+<% end %>

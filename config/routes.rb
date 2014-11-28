@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'messages/create'
 
   resources :messages
   root 'static_pages#home'

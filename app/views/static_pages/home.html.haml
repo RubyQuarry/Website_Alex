@@ -13,6 +13,10 @@
             %i.fa.fa-graduation-cap
           %a
             %i.fa.fa-file-text
+          %a
+            %i.fa.fa-share-alt
+          %a
+            %i.fa.fa-check-square
 
 %div.right-box
   %div.grid
@@ -161,9 +165,9 @@
   %div.about
     %div#contact
       =form_for(Message.new, remote: true) do |f|
-        =f.text_field :name, placeholder: "Name* - What your friends call you"
+        =f.text_field :name, placeholder: "Name - What your friends call you"
         =f.text_field :email, placeholder: "Email - Where you can be reached"
-        =f.text_area  :content, placeholder: "Comment* - What you want to say"
+        =f.text_area  :content, placeholder: "Comment - What you want to say"
         =f.submit "Submit", class: 'button'
     %div#contact
       Feel free to cantact me about working together, need help, or just to stop
