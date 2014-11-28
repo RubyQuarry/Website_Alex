@@ -153,6 +153,8 @@ hr{
   }
 
   .button {
+    display: inline;
+    float: left;
     background: #FFCC02;
     border: none;
     padding: 10px 25px 10px 25px;
@@ -169,7 +171,13 @@ hr{
     &:hover {
         color: #333;
         background-color: #EBEBEB;
+
     }
+  }
+
+  #submitted{
+    color: #21cc38;
+    visibility: hidden;
   }
 
 

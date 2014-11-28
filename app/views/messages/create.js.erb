@@ -1,5 +1,6 @@
 <% if @message.save  %>
-  $('form#new_message').effect('highlight', { color: 'green' }, 2000);
+  //$('form#new_message').effect('highlight', { color: 'green' }, 2000);
+  $('#submitted').css("visibility", "visible");
   $('form#new_message').trigger("reset");
 <% else %>
   <% @message.errors.keys.each do |error| %>
