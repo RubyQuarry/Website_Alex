@@ -164,7 +164,7 @@
       by.
     %div#contact
       =form_for(Message.new, remote: true) do |f|
-        =f.text_field :name
-        =f.text_field :email
-        =f.text_area  :content
+        =f.text_field :name, placeholder: "Name* - What your friends call you"
+        =f.text_field :email, placeholder: "Email - Where you can be reached"
+        =f.text_area  :content, placeholder: "Comment* - What you want to say"
         =f.submit "Submit", class: 'button'
