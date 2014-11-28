@@ -11,14 +11,13 @@
 // about supported directives.
 //
 //= require jquery-2-min
+//= require jquery
+//= require jquery-ui
+//= require jquery_ujs
 //= require turbolinks
 //= require owl.carousel.min
 //= require_tree .
 
-
-$(function(){
-    
-});
 
 
 $(document).ready(function() {
