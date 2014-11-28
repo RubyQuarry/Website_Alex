@@ -19,6 +19,20 @@
  */
 @import 'jeet/index';
 
+$black: #000000;
+$blue1: #cadbee;
+$blue2: #9fbee0;
+$blue3: #76a1d1;
+$blue4: #4c84c1;
+$blue5: #3f76b3;
+
+
+.blue1{ background: $blue1; }
+.blue2{ background: $blue2; }
+.blue3{ background: $blue3; }
+.blue4{ background: $blue4; }
+.blue5{ background: $blue5; }
+
 section {
   @include center(960px);
 }
@@ -30,16 +44,21 @@ hr{
   @include center(960px);
 }
 
+@mixin section-border-bar($color)
+{
+  border: 1px solid $color;
+}
+
 #about_hr{
-  border: 1px solid #3f76b3;
+  @include section-border-bar(#3f76b3);
 }
 
 #overview_hr{
-  border: 1px solid rgba(22, 24, 25, 0.8);
+  @include section-border-bar(rgba(22, 24, 25, 0.8));
 }
 
 #resume_hr{
-  border: 1px solid rgba(22, 24, 25, 0.8);
+  @include section-border-bar(rgba(22, 24, 25, 0.8));
 }
 
 #centered{
@@ -61,14 +80,53 @@ hr{
   font-size: 1.8vw;
 }
 
+
+
+
 .about{
   @include center(940px);
   padding: 10px 0 50px 0;
   text-align: center;
 }
 
-#work{
+.social{
+  @extend .about;
+  > div{ @include column(1/2); }
+  #social-icons
+  {
+    .youtube{ color: #ca4947;
+      &:hover{
+        color: $black;
+      }
+    }
+    .blog{ color: #46c2ca;
+      &:hover{
+        color: $black;
+      }
+    }
+    .linkedin{
+      color: #3fc380;
+      &:hover{
+        color: $black;
+      }
+    }
+    .stack-overflow{
+      color: #fe7a15;
+      &:hover{
+        color: $black;
+      }
+    }
+    .github{
+      color: #373737;
+      &:hover{
+        color: $black;
+      }
+    }
+    i{ padding: 5px; }
+  }
+}
 
+#work{
   p, h2{
     color: #0e0f25;
     margin: 5px 0;
@@ -83,11 +141,9 @@ hr{
     i{
       color: #b52828;
       &:hover{
-        color: #000000;
+        color: $black;
       }
     }
-
-
   }
 }
 
@@ -114,11 +170,6 @@ hr{
 .green { background: #71d7d1; }
 .blue { background: rgb(52, 132, 210) }
 .black{ background: #3ac5bd; color: #343434;}
-.green4{ background: #8ddfdb; }
-.green5{ background: #a9e8e4; }
-.green6{ background: #c5f0ed; }
-.green6{ background: #e2f7f6; }
-
 
 
 .blue1{ background: #cadbee; }
@@ -126,6 +177,9 @@ hr{
 .blue3{ background: #76a1d1; }
 .blue4{ background: #4c84c1; }
 .blue5{ background: #3f76b3; }
+
+
+
 
 // for slideshow
 .roller{
