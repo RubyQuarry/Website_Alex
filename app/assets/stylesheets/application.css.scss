@@ -17,7 +17,7 @@
  *= require normalize-rails
  *= require_tree .
  */
-
+@import 'jeet/index';
 
 section {
   @include center(960px);
