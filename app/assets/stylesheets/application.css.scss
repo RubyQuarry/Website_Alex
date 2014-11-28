@@ -137,7 +137,7 @@ hr{
   input{
     display: block;
     margin: 10px 0;
-    width: 75%;
+    width: 100%;
      border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -169,9 +169,8 @@ hr{
     -moz-box-shadow:1px 1px 1px #3D3D3D;
 
     &:hover {
-        color: #333;
-        background-color: #EBEBEB;
-
+      color: #333;
+      background-color: #EBEBEB;
     }
   }
 
