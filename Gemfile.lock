@@ -98,8 +98,6 @@ GEM
     jbuilder (2.2.4)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
-    jeet (6.1.2)
-      sass (~> 3.2)
     json (1.8.1)
     kgio (2.9.2)
     libv8 (3.16.14.7)
@@ -238,7 +236,6 @@ DEPENDENCIES
   guard-rspec
   haml-rails
   jbuilder (~> 2.0)
-  jeet
   meta_request
   normalize-rails
   rails (= 4.1.6)

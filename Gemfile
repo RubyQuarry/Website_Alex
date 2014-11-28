@@ -43,8 +43,6 @@ gem 'haml-rails'
 
 gem 'font-awesome-rails' # for using font-awesome icons
 
-gem 'jeet'
-
 gem 'unicorn'
 
 group :development, :test do
