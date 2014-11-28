@@ -123,7 +123,7 @@
 %div.section.blue3
   %div.center-section
     Curriculum Vitae - Resume
-  %hr#about_hr
+  %hr#resume_hr
   %div.about
     %div#resume
       =link_to( image_path("AlexNortonResume.pdf")) do
@@ -132,7 +132,7 @@
 %div.section.blue4
   %div.center-section
     Social
-  %hr#about_hr
+  %hr#social_hr
   %div.social
     %div
       %p
@@ -157,12 +157,14 @@
 %div.section.blue5
   %div.center-section
     Contact
-  %hr#overview_hr
+  %hr#contact_hr
   %div.about
-    %div
-      %p
-        I am runner at heart who practices the art of self mastery.
-        Here you will not find any magical information that will save your life
-        but what you may find is a small seed of help.  With this help comes
-        hope and with ambition you can churn that seed into a tree of your own
-        contribution to the world.
+    %div#contact
+      Feel free to cantact me about working together, need help, or just to stop
+      by.
+    %div#contact
+      =form_for(Message.new, remote: true) do |f|
+        =f.text_field :name
+        =f.text_field :email
+        =f.text_area  :content
+        =f.submit "Submit", class: 'button'

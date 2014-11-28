@@ -41,7 +41,7 @@ aside {
 }
 
 hr{
-  @include center(960px);
+  @include center(980px);
 }
 
 @mixin section-border-bar($color)
@@ -50,15 +50,23 @@ hr{
 }
 
 #about_hr{
-  @include section-border-bar(#3f76b3);
+  @include section-border-bar($blue5);
 }
 
 #overview_hr{
-  @include section-border-bar(rgba(22, 24, 25, 0.8));
+  @include section-border-bar($blue4);
 }
 
 #resume_hr{
-  @include section-border-bar(rgba(22, 24, 25, 0.8));
+  @include section-border-bar($blue3);
+}
+
+#social_hr{
+  @include section-border-bar($blue2);
+}
+
+#contact_hr{
+  @include section-border-bar($blue1);
 }
 
 #centered{
@@ -124,6 +132,51 @@ hr{
     }
     i{ padding: 5px; }
   }
+}
+
+
+#contact{
+  @include column(1/2);
+
+  input{
+    display: block;
+    margin: 10px 0;
+    width: 50%;
+     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  }
+
+  textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 100%;
+    border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+  }
+
+  .button {
+    background: #FFCC02;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #585858;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 1px 1px 1px #FFE477;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #3D3D3D;
+    -webkit-box-shadow:1px 1px 1px #3D3D3D;
+    -moz-box-shadow:1px 1px 1px #3D3D3D;
+
+    &:hover {
+        color: #333;
+        background-color: #EBEBEB;
+    }
+  }
+
+
 }
 
 #work{
