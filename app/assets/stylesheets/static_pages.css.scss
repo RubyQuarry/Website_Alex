@@ -423,6 +423,8 @@ figure.effect-selena p {
   padding-left: 10px;
   text-align: left;
   color: #0037FF;
+  word-wrap: break-word;
+  width: 200px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;

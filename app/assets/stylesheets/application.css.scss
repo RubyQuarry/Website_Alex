@@ -68,12 +68,20 @@ hr{
   @include section-border-bar($blue1);
 }
 
+a{
+  text-decoration: none;
+}
+
 #centered{
   text-align: center;
   i{
     padding-top: 10px;
     color: #0e0f25;
   }
+}
+
+#overview{
+
 }
 
 
@@ -131,76 +139,99 @@ hr{
 }
 
 
-#contact{
-  @include column(1/2);
+#contact
+{
+  div
+  {
+    @include center(940px);
+    padding: 10px 0 50px 0;
+    text-align: center;
+    div{
+      @include column(1/2);
+      input{
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+         border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+      }
 
-  input{
-    display: block;
-    margin: 10px 0;
-    width: 100%;
-     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-  }
+      textarea{
+        height:100px;
+        padding: 5px 0px 0px 5px;
+        width: 100%;
+        border-radius: 5px;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+      }
 
-  textarea{
-    height:100px;
-    padding: 5px 0px 0px 5px;
-    width: 100%;
-    border-radius: 5px;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-  }
+      .button {
+        display: inline;
+        float: left;
+        background: #FFCC02;
+        border: none;
+        padding: 10px 25px 10px 25px;
+        color: #585858;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        text-shadow: 1px 1px 1px #FFE477;
+        font-weight: bold;
+        box-shadow: 1px 1px 1px #3D3D3D;
+        -webkit-box-shadow:1px 1px 1px #3D3D3D;
+        -moz-box-shadow:1px 1px 1px #3D3D3D;
 
-  .button {
-    display: inline;
-    float: left;
-    background: #FFCC02;
-    border: none;
-    padding: 10px 25px 10px 25px;
-    color: #585858;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    text-shadow: 1px 1px 1px #FFE477;
-    font-weight: bold;
-    box-shadow: 1px 1px 1px #3D3D3D;
-    -webkit-box-shadow:1px 1px 1px #3D3D3D;
-    -moz-box-shadow:1px 1px 1px #3D3D3D;
+        &:hover {
+          color: #333;
+          background-color: #EBEBEB;
+        }
+      }
 
-    &:hover {
-      color: #333;
-      background-color: #EBEBEB;
+      #submitted{
+        color: #21cc38;
+        visibility: hidden;
+      }
     }
   }
-
-  #submitted{
-    color: #21cc38;
-    visibility: hidden;
-  }
-
-
 }
 
-#work{
-  p, h2{
+#work
+{
+  p, h2
+  {
     color: #0e0f25;
     margin: 5px 0;
     text-align: center;
   }
 }
 
-#resume{
-  text-align: center;
-  @include center(200px);
-  a{
-    i{
-      color: #b52828;
-      &:hover{
-        color: $black;
+
+#resume
+{
+  div
+  {
+    @include center(940px);
+    text-align: center;
+    div
+    {
+      text-align: center;
+      @include center(200px);
+      a{
+        i{
+          color: #b52828;
+            &:hover
+            {
+              color: $black;
+            }
+         }
       }
     }
   }
+}
+
+#social{
+
 }
 
 * {

@@ -7,15 +7,15 @@
           %span
             Alex
         %p
-          %a
+          %a{ href: "#about" }
             %i.fa.fa-heart
-          %a
+          %a{ href: "#overview" }
             %i.fa.fa-graduation-cap
-          %a
+          %a{ href: "#resume" }
             %i.fa.fa-file-text
-          %a
+          %a{ href: "#social" }
             %i.fa.fa-share-alt
-          %a
+          %a{ href: "#contact" }
             %i.fa.fa-check-square
 
 %div.right-box
@@ -65,7 +65,7 @@
           Reach
           %span
             AJ
-        %p You never know whats inside you.
+        %p Always stay connected and invest in people.
 
 
 %div.section.blue1#about
@@ -82,7 +82,7 @@
         to the world.
 
 
-%div.section.blue2
+%div.section.blue2#overview
   %div.center-section
     Overview
   %hr#overview_hr
@@ -124,16 +124,16 @@
           make more mistakes.
 
 
-%div.section.blue3
+%div.section.blue3#resume
   %div.center-section
     Curriculum Vitae - Resume
   %hr#resume_hr
-  %div.about
-    %div#resume
+  %div
+    %div
       =link_to( image_path("AlexNortonResume.pdf")) do
         %i.fa.fa-5x.fa-file-pdf-o
 
-%div.section.blue4
+%div.section.blue4#social
   %div.center-section
     Social
   %hr#social_hr
@@ -158,18 +158,18 @@
 
 
 
-%div.section.blue5
+%div.section.blue5#contact
   %div.center-section
     Contact
   %hr#contact_hr
-  %div.about
-    %div#contact
+  %div
+    %div
       =form_for(@message, remote: true) do |f|
         =f.text_field :name, placeholder: "Name - What your friends call you"
         =f.text_field :email, placeholder: "Email - Where you can be reached"
         =f.text_area  :content, placeholder: "Comment - What you want to say"
         =f.submit "Submit", class: 'button'
       %i.fa.fa-4x.fa-check-square-o#submitted
-    %div#contact
+    %div
       Feel free to cantact me about working together, need help, or just to stop
       by.

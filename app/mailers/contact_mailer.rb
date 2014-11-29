@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "info@applejuicescholars.com"
+  default from: "ajn123@vt.edu"
 
 
   def contact_user(message)
