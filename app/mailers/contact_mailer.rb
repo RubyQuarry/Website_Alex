@@ -1,3 +1,10 @@
 class ContactMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "info@applejuicescholars.com"
+
+
+  def contact_user(message)
+    @message = message
+    mail(to: @message.email, subject: "Contact from AJNORTON.com").deliver
+  end
+
 end

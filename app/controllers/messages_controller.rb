@@ -3,6 +3,10 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
 
+    if @message.valid?
+      ContactMailer.contact_user(@message)
+    end
+
     respond_to do |format|
       format.js
     end

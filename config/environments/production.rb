@@ -78,4 +78,9 @@ Rails.application.configure do
 
   config.assets.precompile += %w( *.css *.js *.woff *.eot *.svg *.ttf)
 
+
+  #email
+  config.action_mailer.default_url_options = { :host => "ajnorton.com" }
+
+
 end
