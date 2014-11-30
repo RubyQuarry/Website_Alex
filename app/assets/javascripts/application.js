@@ -11,21 +11,21 @@
 // about supported directives.
 //
 //= require jquery-2-min
-//= require jquery
-//= require jquery-ui
-//= require jquery_ujs
+//= require rails
 //= require turbolinks
-//= require owl.carousel.min
 //= require_tree .
 
 
 
-$(document).ready(function() {
 
-  $("#owl-example").owlCarousel({
-      items : 3,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
-  });
-
-});
+///  NOT USED: //= require owl.carousel.min
+//
+// $(document).ready(function() {
+//
+//   $("#owl-example").owlCarousel({
+//       items : 3,
+//       itemsDesktop : [1199,3],
+//       itemsDesktopSmall : [979,3]
+//   });
+//
+// });
