@@ -284,6 +284,11 @@ aside
 
     a{
       color: rgb(117,206,226);
+
+      &:hover
+      {
+        color: #dcdcdc;
+      }
     }
   }
 }

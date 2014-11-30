@@ -398,7 +398,8 @@ figure.effect-steve:hover p {
 /***** Selena *****/ // Bottom
 /*-----------------*/
 
-figure.effect-selena {
+figure.effect-selena
+{
   @include background-picture-panel("AJBottom.jpg", 20vh, 100%, center, center);
   opacity: 0.95;
   -webkit-transition: -webkit-transform 0.35s;
@@ -406,47 +407,52 @@ figure.effect-selena {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 
-  &:hover {
-    -webkit-transform: scale3d(0.99, 0.95, 1);
-    transform: scale3d(0.99, 0.95, 1);
+   &:hover
+   {
+     -webkit-transform: scale3d(0.99, 0.95, 1);
+     transform: scale3d(0.99, 0.95, 1);
+   }
+   h2 {
+    padding-left: 10px;
+    color: #31E800;
+    text-align: left;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+
   }
-}
 
-figure.effect-selena h2 {
-  padding-left: 10px;
-  color: #31E800;
-  text-align: left;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,20px,0);
-  transform: translate3d(0,20px,0);
-}
 
-figure.effect-selena p {
-  padding-left: 10px;
-  text-align: left;
-  color: #0037FF;
-  word-wrap: break-word;
-  width: 200px;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: perspective(1000px) rotate3d(1,0,0,90deg);
-  transform: perspective(1000px) rotate3d(1,0,0,90deg);
-  -webkit-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-}
+   p
+   {
+      padding-left: 10px;
+      text-align: left;
+      color: #0037FF;
+      word-wrap: break-word;
+      width: 200px;
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: perspective(1000px) rotate3d(1,0,0,90deg);
+      transform: perspective(1000px) rotate3d(1,0,0,90deg);
+      -webkit-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
+   }
 
-figure.effect-selena:hover h2 {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
+    &:hover h2
+    {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    }
 
-figure.effect-selena:hover p {
-  opacity: 1;
-  color: #27248F;
-  -webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
-  transform: perspective(1000px) rotate3d(1,0,0,0);
+    &:hover p
+    {
+      opacity: 1;
+      color: #27248F;
+      -webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
+      transform: perspective(1000px) rotate3d(1,0,0,0);
+    }
 }
 
 
