@@ -26,20 +26,44 @@ $blue3: #76a1d1;
 $blue4: #4c84c1;
 $blue5: #3f76b3;
 
+
+@mixin content_block
+{
+  @include center(940px);
+  padding: 10px 0 50px 0;
+  text-align: center;
+}
+
 .blue1{ background: $blue1; }
 .blue2{ background: $blue2; }
 .blue3{ background: $blue3; }
 .blue4{ background: $blue4; }
 .blue5{ background: $blue5; }
 
-section {
-  @include center(960px);
+.teal { background: #1e1e1e; color: #fff; }
+.gray { background: #56cec7; color: #fff; }
+.yellow { background: #e8b968; color:#5b6869; }
+.red { background: #F85D5D; color: #fff; }
+.white
+{
+  background: #fff;
+  color: #5b6869;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-aside {
-  @include column(1/4);
-}
+.space-gray{ background: #571f8e; }
+.green { background: #71d7d1; }
+.blue { background: rgb(52, 132, 210) }
+// block background, white font color
+.black{ background: #1d1d1d; color: #dcdcdc;}
 
-hr{
+
+
+
+
+
+hr
+{
   @include center(980px);
 }
 
@@ -80,11 +104,6 @@ a{
   }
 }
 
-#overview{
-
-}
-
-
 .center-section{
   padding: 20px 0 0 0;
   margin: 0 auto;
@@ -95,109 +114,34 @@ a{
 }
 
 
-.about{
-  @include center(940px);
-  padding: 10px 0 50px 0;
-  text-align: center;
-}
-
-.social{
-  @extend .about;
-  > div{ @include column(1/2); }
-  #social-icons
-  {
-    .youtube{ color: #ca4947;
-      &:hover{
-        color: $black;
-      }
-    }
-    .blog{ color: #46c2ca;
-      &:hover{
-        color: $black;
-      }
-    }
-    .linkedin{
-      color: #3fc380;
-      &:hover{
-        color: $black;
-      }
-    }
-    .stack-overflow{
-      color: #fe7a15;
-      &:hover{
-        color: $black;
-      }
-    }
-    .github{
-      color: #373737;
-      &:hover{
-        color: $black;
-      }
-    }
-    i{ padding: 5px; }
-  }
-}
 
 
-#contact
+#about
 {
   div
   {
-    @include center(940px);
-    padding: 10px 0 50px 0;
-    text-align: center;
-    div{
-      @include column(1/2);
-      input{
-        display: block;
-        margin: 10px 0;
-        width: 100%;
-         border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-      }
-
-      textarea{
-        height:100px;
-        padding: 5px 0px 0px 5px;
-        width: 100%;
-        border-radius: 5px;
-       -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-      }
-
-      .button {
-        display: inline;
-        float: left;
-        background: #FFCC02;
-        border: none;
-        padding: 10px 25px 10px 25px;
-        color: #585858;
-        border-radius: 4px;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        text-shadow: 1px 1px 1px #FFE477;
-        font-weight: bold;
-        box-shadow: 1px 1px 1px #3D3D3D;
-        -webkit-box-shadow:1px 1px 1px #3D3D3D;
-        -moz-box-shadow:1px 1px 1px #3D3D3D;
-
-        &:hover {
-          color: #333;
-          background-color: #EBEBEB;
-        }
-      }
-
-      #submitted{
-        color: #21cc38;
-        visibility: hidden;
-      }
+    div
+    {
+      @include content_block;
     }
   }
 }
 
-#work
+
+///////////OVERVIEW
+section
 {
+  @include center(960px);
+}
+
+aside
+{
+  @include column(1/4);
+}
+
+
+
+#overview{
   p, h2
   {
     color: #0e0f25;
@@ -205,6 +149,7 @@ a{
     text-align: center;
   }
 }
+/////////////////////
 
 
 #resume
@@ -231,8 +176,119 @@ a{
 }
 
 #social{
-
+  .social{
+    @include content_block;
+    > div{ @include column(1/2); }
+    #social-icons
+    {
+      .youtube{ color: #ca4947;
+        &:hover{
+          color: $black;
+        }
+      }
+      .blog{ color: #46c2ca;
+        &:hover{
+          color: $black;
+        }
+      }
+      .linkedin{
+        color: #3fc380;
+        &:hover{
+          color: $black;
+        }
+      }
+      .stack-overflow{
+        color: #fe7a15;
+        &:hover{
+          color: $black;
+        }
+      }
+      .github{
+        color: #373737;
+        &:hover{
+          color: $black;
+        }
+      }
+      i{ padding: 5px; }
+    }
+  }
 }
+
+
+
+
+#contact
+{
+  div
+  {
+    @include content_block;
+    div
+    {
+      @include column(1/2);
+      input
+      {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+         border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+      }
+
+      textarea{
+        height:100px;
+        padding: 5px 0px 0px 5px;
+        width: 100%;
+        border-radius: 5px;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+      }
+
+      .button
+      {
+        display: inline;
+        float: left;
+        background: #FFCC02;
+        border: none;
+        padding: 10px 25px 10px 25px;
+        color: #585858;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        text-shadow: 1px 1px 1px #FFE477;
+        font-weight: bold;
+        box-shadow: 1px 1px 1px #3D3D3D;
+        -webkit-box-shadow:1px 1px 1px #3D3D3D;
+        -moz-box-shadow:1px 1px 1px #3D3D3D;
+
+        &:hover
+        {
+          color: #333;
+          background-color: #EBEBEB;
+        }
+      }
+
+      #submitted
+      {
+        color: #21cc38;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+#footer{
+  div
+  {
+    @include center(600px);
+
+    a{
+      color: rgb(117,206,226);
+    }
+  }
+}
+
+
 
 * {
   -webkit-box-sizing: border-box;
@@ -248,23 +304,6 @@ a{
   height: auto;
 }
 
-.teal { background: #1e1e1e; color: #fff; }
-.gray { background: #56cec7; color: #fff; }
-.yellow { background: #e8b968; color:#5b6869; }
-.red { background: #F85D5D; color: #fff; }
-.white { background: #fff; color: #5b6869; padding-top: 25px; padding-bottom: 25px; }
-.space-gray{ background: #571f8e; }
-.green { background: #71d7d1; }
-.blue { background: rgb(52, 132, 210) }
-.black{ background: #3ac5bd; color: #343434;}
-
-
-.blue1{ background: #cadbee; }
-.blue2{ background: #9fbee0; }
-.blue3{ background: #76a1d1; }
-.blue4{ background: #4c84c1; }
-.blue5{ background: #3f76b3; }
-
 
 
 
@@ -277,10 +316,4 @@ a{
     max-height: 200px;
     max-width: 200px;
   }
-}
-
-.footer{
-  @include center(400px);
-  margin: 0 auto;
-  width: 20%;
 }

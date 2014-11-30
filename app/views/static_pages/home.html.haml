@@ -26,7 +26,7 @@
           Work
           %span
             AJ
-        %p I live, I laugh, I learn
+        %p Stop worrying and start living.
         %a{ href: "oeuoue" } View more
 
 
@@ -54,7 +54,7 @@
           %span
             AJ
         %div
-          %p You never know whats inside you.  I love this game.
+          %p  Don't let others bring you down.  Focus on those who love you.
         %a{ href: "#" } View more
 
 %div.bottom-box
@@ -72,7 +72,7 @@
   %div.center-section
     About
   %hr#about_hr
-  %div.about
+  %div
     %div
       %p
         I am runner at heart who practices the art of self mastery.
@@ -164,12 +164,37 @@
   %hr#contact_hr
   %div
     %div
-      =form_for(@message, remote: true) do |f|
-        =f.text_field :name, placeholder: "Name - What your friends call you"
-        =f.text_field :email, placeholder: "Email - Where you can be reached"
-        =f.text_area  :content, placeholder: "Comment - What you want to say"
-        =f.submit "Submit", class: 'button'
-      %i.fa.fa-4x.fa-check-square-o#submitted
+      Feel free to contact me at: ajn123@vt.edu
+      %div
+-#      =form_for(@message, remote: true) do |f|
+-#        =f.text_field :name, placeholder: "Name - What your friends call you"
+-#        =f.text_field :email, placeholder: "Email - Where you can be reached"
+-#        =f.text_area  :content, placeholder: "Comment - What you want to say"
+-#        =f.submit "Submit", class: 'button'
+-#      %i.fa.fa-4x.fa-check-square-o#submitted
+
+
+
+%div.section.black#footer
+  %div.center-section
+    Thanks
+  %hr#about_hr
+  %div
     %div
-      Feel free to cantact me about working together, need help, or just to stop
-      by.
+      %p
+        I have the following to thank for this website:
+      %ul
+        %li
+          %a{ href: "http://instagram.com/peterahn", target: "_blank" }
+            Peter Ahn
+          for the wonderful pictures.
+        %li
+          %a{ href: "http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/", target: "_blank"}
+            Typamus
+          for the awesome hover effects.
+        %li
+          %a{ href: "http://fortawesome.github.io/Font-Awesome/", target: "_blank"}
+            Font-Awesome
+          for the fantastic icons.
+        %li
+          HTML/CSS/JS/RUBY
