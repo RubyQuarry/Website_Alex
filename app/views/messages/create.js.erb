@@ -3,6 +3,7 @@
   $('#submitted').css("visibility", "visible");
   $('form#new_message').trigger("reset");
 <% else %>
+  <% puts "hello"  %>
   <% @message.errors.keys.each do |error| %>
     $('#message_<%= error %>').effect('highlight', { color: 'red' }, 2000);
   <% end %>

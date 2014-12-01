@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery-2-min
+//= require jquery-min-ui
 //= require rails
 //= require turbolinks
 //= require_tree .
