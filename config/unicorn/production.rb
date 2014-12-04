@@ -9,7 +9,7 @@ listen 80, :tcp_nopush => true
 timeout 30
 
 # feel free to point this anywhere accessible on the filesystem
-pid "/var/unicorn.pid"
+pid "/var/www/appleJuiceScholars/current/tmp/pids/unicorn.pid"
 
 stderr_path "/var/unicorn.stderr.log"
 stdout_path "/var/unicorn.stdout.log"
