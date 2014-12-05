@@ -27,8 +27,21 @@ $blue5: #3f76b3;
 @mixin content_block
 {
   @include center(940px);
-  padding: 10px 0 1px 0;
+  padding: 0px 0 1px 0;
   text-align: center;
+}
+
+@mixin media_query_columns($fraction)
+{
+  @media  (min-width: 500px)
+  {
+    @include column($fraction);
+  }
+
+  @media  (max-width: 499px)
+  {
+    @include stack();
+  }
 }
 
 .blue1{ background: $blue1; }
@@ -90,13 +103,13 @@ a{text-decoration: none;}
 {
   text-align: center;
   i{
-    padding-top: 10px;
+    padding-top: 5px;
     color: #0e0f25;
   }
 }
 
 .center-section{
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
   margin: 0 auto;
   width: 380px;
   text-align: center;
@@ -126,18 +139,8 @@ section
   @include stack();
 }
 
-
-@media  (min-width: 500px) {
-  aside{
-    @include column(1/4);
-  }
-
-}
-
-@media  (max-width: 499px) {
-  aside{
-    @include stack();
-  }
+aside{
+  @include media_query_columns(1/4);
 
 }
 
@@ -180,13 +183,7 @@ section
     @include content_block;
     > div
     {
-      @media  (min-width: 500px) {
-        @include column(1/2);
-      }
-
-      @media  (max-width: 499px) {
-        @include stack();
-      }
+      @include media_query_columns(1/2);
     }
     #social-icons
     {
@@ -243,18 +240,7 @@ section
     @include content_block;
     div
     {
-
-      @media  (min-width: 500px) {
-          @include column(1/2);
-
-
-      }
-
-      @media  (max-width: 499px) {
-        @include stack();
-
-      }
-
+      @include media_query_columns(1/2);
 
       input
       {
@@ -334,7 +320,7 @@ section
 
 
 .section {
-  padding: 40px 10px;
+  padding: 0px 10px 20px 0;
   margin: 0 auto;
   width: 100%;
   height: auto;
