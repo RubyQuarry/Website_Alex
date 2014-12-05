@@ -27,7 +27,7 @@ $blue5: #3f76b3;
 @mixin content_block
 {
   @include center(940px);
-  padding: 10px 0 50px 0;
+  padding: 10px 0 1px 0;
   text-align: center;
 }
 
@@ -101,7 +101,7 @@ a{text-decoration: none;}
   width: 380px;
   text-align: center;
   font-weight: 900;
-  font-size: 1.8vw;
+  font-size: 18px;
 }
 
 
@@ -178,7 +178,16 @@ section
 #social{
   .social{
     @include content_block;
-    > div{ @include column(1/2); }
+    > div
+    {
+      @media  (min-width: 500px) {
+        @include column(1/2);
+      }
+
+      @media  (max-width: 499px) {
+        @include stack();
+      }
+    }
     #social-icons
     {
       .youtube
@@ -234,7 +243,19 @@ section
     @include content_block;
     div
     {
-      @include column(1/2);
+
+      @media  (min-width: 500px) {
+          @include column(1/2);
+
+
+      }
+
+      @media  (max-width: 499px) {
+        @include stack();
+
+      }
+
+
       input
       {
         display: block;
