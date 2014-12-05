@@ -133,7 +133,7 @@ a{text-decoration: none;}
 
 
 ///////////OVERVIEW
-section
+.overview-panes
 {
   @include center(960px);
   @include stack();
@@ -141,7 +141,6 @@ section
 
 aside{
   @include media_query_columns(1/4);
-
 }
 
 #overview{
@@ -338,4 +337,62 @@ aside{
     max-height: 200px;
     max-width: 200px;
   }
+}
+
+
+
+
+  .hsContainer {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+  }
+  .hsContent {
+  color: #ebebeb;
+
+
+    h2{
+      position: absolute;
+      top: 200px;
+      left: 0;
+      width: 450px;
+    }
+  }
+  .bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  /* Slide 1 */
+#slide-1 .bcg {background-image: url(asset-path("AJFullFace.jpg"));}
+
+#slide-2 .bcg {background-image: url(asset-path("AJLeft.jpg"));}
+
+#slide-3 .bcg {background-image: url(asset-path("AJLeft.jpg"));}
+
+
+
+
+
+/* Slide 5 */
+#slide-5 {position: relative;}
+#slide-5 .bcg {background-image:url(asset-path("AJFullFace.jpg"));}
+#slide-5 .bcg2 {
+  background-image: url(asset-path("AJTop.jpg"));
+  position: fixed; bottom: 0; left: 0;
+  opacity: 0; z-index: 1
+}
+#slide-5 .bcg3 {
+  background: none; background-color: #010101;
+  position: fixed; bottom: 0; left: 0;
+  opacity: 0; z-index: 2
 }
