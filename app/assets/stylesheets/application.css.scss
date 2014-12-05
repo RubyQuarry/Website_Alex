@@ -54,11 +54,6 @@ $blue5: #3f76b3;
 // block background, white font color
 .black{ background: #1d1d1d; color: #dcdcdc;}
 
-
-
-
-
-
 hr
 {
   @include center(980px);
@@ -89,11 +84,10 @@ hr
   @include section-border-bar($blue1);
 }
 
-a{
-  text-decoration: none;
-}
+a{text-decoration: none;}
 
-#centered{
+#centered
+{
   text-align: center;
   i{
     padding-top: 10px;
@@ -129,11 +123,23 @@ a{
 section
 {
   @include center(960px);
+  @include stack();
 }
 
-aside
-{
-  @include column(1/4);
+
+@media screen and (max-width: 2000px) {
+  aside{
+    @include column(1/4);
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  aside{
+    @include stack();
+
+  }
+
 }
 
 
@@ -178,31 +184,41 @@ aside
     > div{ @include column(1/2); }
     #social-icons
     {
-      .youtube{ color: #ca4947;
-        &:hover{
+      .youtube
+      { color: #ca4947;
+        &:hover
+        {
           color: $black;
         }
       }
-      .blog{ color: #46c2ca;
-        &:hover{
+      .blog
+      { color: #46c2ca;
+        &:hover
+        {
           color: $black;
         }
       }
-      .linkedin{
+      .linkedin
+      {
         color: #3fc380;
-        &:hover{
+        &:hover
+        {
           color: $black;
         }
       }
-      .stack-overflow{
+      .stack-overflow
+      {
         color: #fe7a15;
-        &:hover{
+        &:hover
+        {
           color: $black;
         }
       }
-      .github{
+      .github
+      {
         color: #373737;
-        &:hover{
+        &:hover
+        {
           color: $black;
         }
       }
