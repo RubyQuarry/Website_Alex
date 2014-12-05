@@ -127,22 +127,19 @@ section
 }
 
 
-@media screen and (max-width: 2000px) {
+@media  (min-width: 500px) {
   aside{
     @include column(1/4);
   }
 
 }
 
-@media screen and (max-width: 480px) {
+@media  (max-width: 499px) {
   aside{
     @include stack();
-
   }
 
 }
-
-
 
 #overview{
   p, h2
