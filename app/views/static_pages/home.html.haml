@@ -2,152 +2,136 @@
   %section#slide-1.homeSlide
     .bcg{"data-anchor-target" => "#slide-1", "data-center" => "background-position: 50% 0px;", "data-top-bottom" => "background-position: 50% 20px;"}
       .hsContainer
-
-
-%div.section.blue1#about
-  %div.center-section
-    %h1
-      About
-  %hr#about_hr
-  %div
+  %div.section.blue1#about
+    %div.center-section
+      %h1
+        About
+    %hr#about_hr
     %div
-      %p
-        I am runner at heart who practices the art of self mastery.
-        Here you will not find any magical information that will save your life
-        but what you may find is a small seed of help.  With this help comes hope
-        and with ambition you can churn that seed into a tree of your own contribution
-        to the world.
-
-
-
-
-
-%div.section.blue2#overview
-  %div.center-section
-    %h1
-      Overview
-  %hr#overview_hr
-  %div.overview-panes
-    %aside
-      %div#centered
-        %i.fa.fa-5x.fa-mobile
-      %div#work
-        %h2
-          Code
-        %p
-          I enjoy connecting others from our pocket paradise.  I previously
-          started out with Windows Phone development and have progressed to iOS.
-    %aside
-      %div#centered
-        %i.fa.fa-5x.fa-microphone
-      %div#work
-        %h2
-          Voice
-        %p
-          I try to channel my inner Morgan Freeman voice with podcasts and
-          Youtube videos of my learnings in (mostly) Computer Science.
-    %aside
-      %div#centered
-        %i.fa.fa-5x.fa-location-arrow
-      %div#work
-        %h2
-          Travel
-        %p
-          I want to travel everywhere.  Inspiration can strike at anytime.
-    %aside
-      %div#centered
-        %i.fa.fa-5x.fa-flask
-      %div#work
-        %h2
-          Experimental
-        %p
-          I am always looking to invest in new people, make new friends, and
-          make more mistakes.
-
-
-
-%div.section.blue3#resume
-  %div.center-section
-    %h1
-      Curriculum Vitae
-  %hr#resume_hr
-  %div
-    %div
-      =link_to( image_path("AlexNortonResume.pdf")) do
-        %i.fa.fa-5x.fa-file-pdf-o
-
-%div.section.blue4#social
-  %div.center-section
-    %h1
-      Social
-  %hr#social_hr
-  %div.social
-    %div
-      %p
-        My biggest online presence is in my blog and Youtube channel.  Feel free
-        to view my Github and view a modicum of my coding projects.  Stack
-        overflow is the mother of my learning and I drop in constantly.
-    %div#social-icons
-      =link_to("https://www.youtube.com/user/AppleJuiceScholars") do
-        %i.fa.fa-5x.fa-youtube-square.youtube
-      =link_to("http://applejuicescholars.com/") do
-        %i.fa.fa-5x.fa-stack-exchange.blog
       %div
-        =link_to("https://github.com/ajn123") do
-          %i.fa.fa-3x.fa-github-square.github
-        =link_to("https://www.linkedin.com/in/ajnorton/") do
-          %i.fa.fa-3x.fa-linkedin-square.linkedin
-        =link_to("http://stackoverflow.com/users/4171159/applejuiceteaching") do
-          %i.fa.fa-3x.fa-stack-overflow.stack-overflow
-
-
-
-%div.section.blue5#contact
-  %div.center-section
-    %h1
-      Contact
-  %hr#contact_hr
-  %div
+        %p
+          I am runner at heart who practices the art of self mastery.
+          Here you will not find any magical information that will save your life
+          but what you may find is a small seed of help.  With this help comes hope
+          and with ambition you can churn that seed into a tree of your own contribution
+          to the world.
+  %div.section.blue2#overview
+    %div.center-section
+      %h1
+        Overview
+    %hr#overview_hr
+    %div.overview-panes
+      %aside
+        %div#centered
+          %i.fa.fa-5x.fa-mobile
+        %div#work
+          %h2
+            Code
+          %p
+            I enjoy connecting others from our pocket paradise.  I previously
+            started out with Windows Phone development and have progressed to iOS.
+      %aside
+        %div#centered
+          %i.fa.fa-5x.fa-microphone
+        %div#work
+          %h2
+            Voice
+          %p
+            I try to channel my inner Morgan Freeman voice with podcasts and
+            Youtube videos of my learnings in (mostly) Computer Science.
+      %aside
+        %div#centered
+          %i.fa.fa-5x.fa-location-arrow
+        %div#work
+          %h2
+            Travel
+          %p
+            I want to travel everywhere.  Inspiration can strike at anytime.
+      %aside
+        %div#centered
+          %i.fa.fa-5x.fa-flask
+        %div#work
+          %h2
+            Experimental
+          %p
+            I am always looking to invest in new people, make new friends, and
+            make more mistakes.
+  %div.section.blue3#resume
+    %div.center-section
+      %h1
+        Curriculum Vitae
+    %hr#resume_hr
     %div
-      =form_for(@message, remote: true) do |f|
-        =f.text_field :name, placeholder: "Name - What your friends call you"
-        =f.text_field :email, placeholder: "Email - Where you can be reached"
-        =f.text_area  :content, placeholder: "Comment - What you want to say"
-        =f.submit "Submit", class: 'button'
-      %i.fa.fa-4x.fa-check-square-o#submitted
+      %div
+        =link_to( image_path("AlexNortonResume.pdf")) do
+          %i.fa.fa-5x.fa-file-pdf-o
+
+  %div.section.blue4#social
+    %div.center-section
+      %h1
+        Social
+    %hr#social_hr
+    %div.social
+      %div
+        %p
+          My biggest online presence is in my blog and Youtube channel.  Feel free
+          to view my Github and view a modicum of my coding projects.  Stack
+          overflow is the mother of my learning and I drop in constantly.
+      %div#social-icons
+        =link_to("https://www.youtube.com/user/AppleJuiceScholars") do
+          %i.fa.fa-5x.fa-youtube-square.youtube
+        =link_to("http://applejuicescholars.com/") do
+          %i.fa.fa-5x.fa-stack-exchange.blog
+        %div
+          =link_to("https://github.com/ajn123") do
+            %i.fa.fa-3x.fa-github-square.github
+          =link_to("https://www.linkedin.com/in/ajnorton/") do
+            %i.fa.fa-3x.fa-linkedin-square.linkedin
+          =link_to("http://stackoverflow.com/users/4171159/applejuiceteaching") do
+            %i.fa.fa-3x.fa-stack-overflow.stack-overflow
+  %div.section.blue5#contact
+    %div.center-section
+      %h1
+        Contact
+    %hr#contact_hr
     %div
-      Feel free to contact me at ajn123@vt.edu
-
-
-%div.section.black#footer
-  %div.center-section
-    %h1
-      Thanks
-  %hr#about_hr
-  %div
+      %div
+        =form_for(@message, remote: true) do |f|
+          =f.text_field :name, placeholder: "Name - What your friends call you"
+          =f.text_field :email, placeholder: "Email - Where you can be reached"
+          =f.text_area  :content, placeholder: "Comment - What you want to say"
+          =f.submit "Submit", class: 'button'
+        %i.fa.fa-4x.fa-check-square-o#submitted
+      %div
+        Feel free to contact me at ajn123@vt.edu
+  %div.section.black#footer
+    %div.center-section
+      %h1
+        Thanks
+    %hr#about_hr
     %div
-      %p
-        I have the following to thank for this website:
-      %ul
-        %li
-          %a{ href: "http://instagram.com/peterahn", target: "_blank" }
-            Peter Ahn
-          for the wonderful pictures.
-        %li
-          %a{ href: "http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/", target: "_blank"}
-            Typamus
-          for the awesome hover effects.
-        %li
-          %a{ href: "http://fortawesome.github.io/Font-Awesome/", target: "_blank"}
-            Font-Awesome
-          for the fantastic icons.
-        %li
-          HTML/CSS/JS/RUBY
-        %li
-          Find the code
-          %a{ href: "https://github.com/RubyQuarry/Website_Alex", target: "_blonk" }
-            here
-
-%section#slide-2
-  .bcg{"data-anchor-target" => "#slide-3", "data-center" => "background-position: 50% 0px;", "data-top-bottom" => "background-position: 50% -300px;"}
-    .hsContainer
+      %div
+        %p
+          I have the following to thank for this website:
+        %ul
+          %li
+            %a{ href: "http://instagram.com/peterahn", target: "_blank" }
+              Peter Ahn
+            for the wonderful pictures.
+          %li
+            %a{ href: "http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/", target: "_blank"}
+              Typamus
+            for the awesome hover effects.
+          %li
+            %a{ href: "http://fortawesome.github.io/Font-Awesome/", target: "_blank"}
+              Font-Awesome
+            for the fantastic icons.
+          %li
+            HTML/CSS/JS/RUBY
+          %li
+            Find the code
+            %a{ href: "https://github.com/RubyQuarry/Website_Alex", target: "_blonk" }
+              here
+  %section#slide-2
+    .bcg{"data-anchor-target" => "#slide-3", "data-center" => "background-position: 50% 0px;", "data-top-bottom" => "background-position: 50% -300px;"}
+      .hsContainer
