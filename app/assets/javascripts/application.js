@@ -14,21 +14,9 @@
 //= require jquery-min-ui
 //= require rails
 //= require turbolinks
-//= require scrollr.min
 //= require_tree .
 
 
-
-$(document).ready(function()
-{
-  var s = skrollr.init({
-    render: function(data) {
-      //Debugging - Log the current scroll position.
-      //console.log(data.curTop);
-    }
-  });
-
-});
 
 
 ///  NOT USED: //= require owl.carousel.min
