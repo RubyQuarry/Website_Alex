@@ -353,9 +353,8 @@ aside{
   }
   .hsContent {
   color: #ebebeb;
-
-
-    h2{
+    h2
+    {
       position: absolute;
       top: 200px;
       left: 0;
@@ -373,26 +372,36 @@ aside{
 
 
   /* Slide 1 */
-#slide-1 .bcg {background-image: url(asset-path("AJFullFace.jpg"));}
+#slide-1 .bcg { background-image: url(asset-path("AJFullFace.jpg"));}
 
-#slide-2 .bcg {background-image: url(asset-path("AJLeft.jpg"));}
+#slide-2 .bcg { background-image: url(asset-path("AJLeft.jpg"));}
 
-#slide-3 .bcg {background-image: url(asset-path("AJLeft.jpg"));}
+#slide-3 .bcg { background-image: url(asset-path("AJLeft.jpg"));}
 
 
 
 
 
 /* Slide 5 */
-#slide-5 {position: relative;}
+#slide-5 { position: relative; }
 #slide-5 .bcg {background-image:url(asset-path("AJFullFace.jpg"));}
-#slide-5 .bcg2 {
+#slide-5 .bcg2
+{
   background-image: url(asset-path("AJTop.jpg"));
   position: fixed; bottom: 0; left: 0;
   opacity: 0; z-index: 1
 }
-#slide-5 .bcg3 {
+#slide-5 .bcg3
+{
   background: none; background-color: #010101;
   position: fixed; bottom: 0; left: 0;
   opacity: 0; z-index: 2
+}
+
+
+#skrollr-body
+{
+  float: left;
+  width: 100%;
+  height: 100%;
 }
