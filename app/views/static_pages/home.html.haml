@@ -55,17 +55,8 @@
         %p
           I am always looking to invest in new people, make new friends, and
           make more mistakes.
-%div.section.blue3#resume
-  %div.center-section
-    %h1
-      Curriculum Vitae
-  %hr#resume_hr
-  %div
-    %div
-      =link_to( image_path("AlexNortonResume.pdf")) do
-        %i.fa.fa-5x.fa-file-pdf-o
 
-%div.section.blue4#social
+%div.section.blue3#social
   %div.center-section
     %h1
       Social
@@ -88,6 +79,19 @@
           %i.fa.fa-3x.fa-linkedin-square.linkedin
         =link_to("http://stackoverflow.com/users/4171159/applejuiceteaching") do
           %i.fa.fa-3x.fa-stack-overflow.stack-overflow
+
+%div.section.blue4#resume
+  %div.center-section
+    %h1
+      Curriculum Vitae
+    %hr#about_hr
+      %div
+        %div
+          =link_to( image_path("AlexNortonResume.pdf")) do
+            %i.fa.fa-5x.fa-file-pdf-o
+
+
+
 %div.section.blue5#contact
   %div.center-section
     %h1
@@ -117,10 +121,6 @@
           %a{ href: "http://instagram.com/peterahn", target: "_blank" }
             Peter Ahn
           for the wonderful pictures.
-        %li
-          %a{ href: "http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/", target: "_blank"}
-            Typamus
-          for the awesome hover effects.
         %li
           %a{ href: "http://fortawesome.github.io/Font-Awesome/", target: "_blank"}
             Font-Awesome

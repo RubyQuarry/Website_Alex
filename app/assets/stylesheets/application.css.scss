@@ -17,11 +17,11 @@
 @import 'jeet/index';
 
 $black: #000000;
-$blue1: #cadbee;
-$blue2: #9fbee0;
-$blue3: #76a1d1;
-$blue4: #4c84c1;
-$blue5: #3f76b3;
+$blue1: #FCFFF5;
+$blue2: #D1DBBD;
+$blue3: #91AA9D;
+$blue4: #3E606F;
+$blue5: #193441;
 
 
 @mixin content_block
@@ -42,6 +42,10 @@ $blue5: #3f76b3;
   {
     @include stack();
   }
+}
+
+@mixin black-text{
+  color: #dcdcdc;
 }
 
 .blue1{ background: $blue1; }
@@ -75,6 +79,10 @@ hr
 @mixin section-border-bar($color)
 {
   border: 1px solid $color;
+}
+
+hr{
+  margin-bottom: 15px;
 }
 
 #about_hr{
@@ -179,6 +187,7 @@ aside{
 
 #social{
   .social{
+
     @include content_block;
     > div
     {
@@ -187,14 +196,14 @@ aside{
     #social-icons
     {
       .youtube
-      { color: #ca4947;
+      { color: #b31217;
         &:hover
         {
           color: $black;
         }
       }
       .blog
-      { color: #46c2ca;
+      { color: #f57d00;
         &:hover
         {
           color: $black;
@@ -202,7 +211,7 @@ aside{
       }
       .linkedin
       {
-        color: #3fc380;
+        color: #0976b4;
         &:hover
         {
           color: $black;
@@ -218,10 +227,10 @@ aside{
       }
       .github
       {
-        color: #373737;
+        color: #000000;
         &:hover
         {
-          color: $black;
+          color: $blue4;
         }
       }
       i{ padding: 5px; }
@@ -236,6 +245,8 @@ aside{
 {
   div
   {
+    @include black-text;
+
     @include content_block;
     div
     {
