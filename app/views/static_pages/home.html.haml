@@ -1,6 +1,11 @@
 %section#slide-1.homeSlide
   .bcg
     .hsContainer
+      .hsContent
+        %h2#quote
+      =link_to("#about") do
+        %i#arrow-down.fa.fa-5x.fa-arrow-circle-down
+
 %div.section.blue1#about
   %div.center-section
     %h1
@@ -111,7 +116,7 @@
   %div.center-section
     %h1
       Thanks
-  %hr#about_hr
+  %hr#resume_hr
   %div
     %div
       %p
@@ -134,3 +139,6 @@
 %section#slide-2
   .bcg
     .hsContainer
+      .hsContent
+        =link_to("#about") do
+          %i#arrow-up.fa.fa-5x.fa-arrow-circle-up

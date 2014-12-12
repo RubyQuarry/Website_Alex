@@ -14,6 +14,7 @@
 //= require jquery-min-ui
 //= require rails
 //= require turbolinks
+//= require rss-feed
 //= require_tree .
 
 
@@ -21,12 +22,14 @@
 
 ///  NOT USED: //= require owl.carousel.min
 //
-// $(document).ready(function() {
-//
-//   $("#owl-example").owlCarousel({
-//       items : 3,
-//       itemsDesktop : [1199,3],
-//       itemsDesktopSmall : [979,3]
-//   });
-//
-// });
+$(document).ready(function() {
+    $('#quote').rssfeed('http://www.quotesdaddy.com/feed/tagged/Inspirational', {
+      limit: 1,
+      snippet:false,
+      content: false,
+      header: false,
+      media : false,
+      date: false,
+      titletag : "h5"
+    });
+});

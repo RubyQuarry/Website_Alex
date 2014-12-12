@@ -105,7 +105,7 @@ hr{
   @include section-border-bar($blue1);
 }
 
-a{text-decoration: none;}
+a{ text-decoration: none; }
 
 #centered
 {
@@ -174,7 +174,7 @@ aside{
       @include center(200px);
       a{
         i{
-          color: #b52828;
+          color: #00ee88;
             &:hover
             {
               color: $black;
@@ -326,6 +326,7 @@ aside{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+
 }
 
 
@@ -355,24 +356,62 @@ aside{
 
 
 .hsContainer {
-  display: table;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  opacity: 0;
-}
-.hsContent
-{
-  color: #ebebeb;
-  h2
+
+  #arrow-down
   {
     position: absolute;
-    top: 200px;
-    left: 0;
-    width: 450px;
+    bottom: 10vh;
+    left: 75vw;
+    width: 23vw;
+    color: #282828;
   }
+
+  #arrow-up
+  {
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+    width: 23vw;
+    color: #282828;
+  }
+
+  .hsContent
+  {
+    color: $black;
+    h2
+    {
+      position: absolute;
+      top: 10vh;
+      left: 75vw;
+      width: 23vw;
+      .rssRow
+      {
+
+
+        list-style-type: none;
+        a
+        {
+          color: #282828;
+          @media  (max-width: 699px)
+          {
+            color: transparent;
+          }
+        }
+      }
+
+
+    }
+
+  }
+
 }
+
+
+
 .bcg
 {
   background-position: center center;
