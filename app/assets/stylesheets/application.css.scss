@@ -23,6 +23,11 @@ $blue3: #91AA9D;
 $blue4: #3E606F;
 $blue5: #193441;
 
+@font-face{
+  font-family:'Blockography';
+  src:font-url('Station.ttf');
+}
+
 
 @mixin content_block
 {
@@ -351,7 +356,6 @@ aside{
 
 
 
-
 .hsContainer {
   width: 100%;
   height: 100vh;
@@ -390,6 +394,8 @@ aside{
         list-style-type: none;
         a
         {
+          font-family: 'Blockography';
+          font-size: 25px;
           color: #282828;
           @media  (max-width: 699px)
           {
@@ -438,7 +444,7 @@ aside{
 #slide-5 .bcg3
 {
   background: none; background-color: #010101;
-   bottom: 0; left: 0;
+  bottom: 0; left: 0;
   opacity: 0; z-index: 2
 }
 

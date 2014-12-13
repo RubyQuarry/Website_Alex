@@ -30,6 +30,6 @@ $(document).ready(function() {
       header: false,
       media : false,
       date: false,
-      titletag : "h5"
+      titletag : "p"
     });
 });
