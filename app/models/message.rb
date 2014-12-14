@@ -1,3 +1,3 @@
 class Message < ActiveRecord::Base
-  validates :name, :content, :email, presence: true
+  validates :name, :email, :content, presence: true
 end
