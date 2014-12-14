@@ -25,7 +25,7 @@ $blue5: #193441;
 
 @font-face{
   font-family:'Station';
-  src:font-url('Station.ttf');
+  src: font-url('Station.ttf');
 }
 
 
@@ -189,7 +189,6 @@ aside{
 
 #social{
   .social{
-
     @include content_block;
     > div
     {
@@ -314,7 +313,8 @@ aside{
   {
     @include center(600px);
 
-    a{
+    a
+    {
       color: rgb(117,206,226);
 
       &:hover
@@ -423,9 +423,7 @@ aside{
 }
 
 
-
-
-  /* Slide 1 */
+/* Slide 1 */
 #slide-1 .bcg { background-image: url(asset-path("AJFullFace.jpg"));}
 
 #slide-2 .bcg { background-image: url(asset-path("AJLeft.jpg"));}
@@ -441,13 +439,13 @@ aside{
   bottom: 0; left: 0;
   opacity: 0; z-index: 1
 }
+
 #slide-5 .bcg3
 {
   background: none; background-color: #010101;
   bottom: 0; left: 0;
   opacity: 0; z-index: 2
 }
-
 
 #skrollr-body
 {
