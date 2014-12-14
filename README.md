@@ -22,4 +22,4 @@ cap production deploy
 
 * Hackathon Hackers for the feedback on the website.
 
-* Everyone else because I can not give back enough.
+* Everyone else
