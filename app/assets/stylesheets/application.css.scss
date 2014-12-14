@@ -24,7 +24,7 @@ $blue4: #3E606F;
 $blue5: #193441;
 
 @font-face{
-  font-family:'Blockography';
+  font-family:'Station';
   src:font-url('Station.ttf');
 }
 
@@ -265,7 +265,8 @@ aside{
         -moz-border-radius: 5px;
       }
 
-      textarea{
+      textarea
+      {
         color: #000000;
         height:100px;
         padding: 5px 0px 0px 5px;
@@ -350,7 +351,8 @@ aside{
   margin: 0 auto;
   width: 50%;
 
- img{
+  img
+  {
     max-height: 200px;
     max-width: 200px;
   }
@@ -396,7 +398,7 @@ aside{
         list-style-type: none;
         a
         {
-          font-family: 'Blockography';
+          font-family: 'Station';
           font-size: 25px;
           color: #282828;
           @media  (max-width: 699px)
@@ -429,10 +431,6 @@ aside{
 #slide-2 .bcg { background-image: url(asset-path("AJLeft.jpg"));}
 
 #slide-3 .bcg { background-image: url(asset-path("AJLeft.jpg"));}
-
-
-
-
 
 /* Slide 5 */
 #slide-5 { position: relative; }
