@@ -1,9 +1,9 @@
 <% if @message.save  %>
   //$('form#new_message').effect('highlight', { color: 'green' }, 2000);
-  $('#submitted').css("visibility", "visible");
+  $('#submitted').fadeIn(2000);
+  $('#submitted').fadeOut(1500);
   $('form#new_message').trigger("reset");
 <% else %>
-  <% puts "hello"  %>
   <% @message.errors.keys.each do |error| %>
     $('#message_<%= error %>').effect('highlight', { color: 'red' }, 2000);
   <% end %>
