@@ -66,3 +66,5 @@ namespace :rvm do
           run "rvm rvmrc trust #{release_path}"
             end
 end
+
+after "deploy", "rvm:trust_rvmrc"
