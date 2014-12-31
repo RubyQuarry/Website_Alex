@@ -1,0 +1,1874 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/**
+ * Grid settings.
+ * All values are defaults and can therefore be easily overidden.
+ */
+/**
+ * List functions courtesy of the wonderful folks at Team Sass.
+ * Check out their awesome grid: Singularity.
+ */
+/**
+ * Get  percentage from a given ratio.
+ * @param {number} [$ratio=1] - The column ratio of the element.
+ * @returns {number} - The percentage value.
+ */
+/**
+ * Work out the column widths based on the ratio and gutter sizes.
+ * @param {number} [$ratios=1] - The column ratio of the element.
+ * @param {number} [$gutter=$jeet-gutter] - The gutter for the column.
+ * @returns {list} $width $gutter - A list containing the with and gutter for the element.
+ */
+/**
+ * Get the set layout direction for the project.
+ * @returns {string} $direction - The layout direction.
+ */
+/**
+ * Replace a specified list value with a new value (uses built in set-nth() if available)
+ * @param {list} $list - The list of values you want to alter.
+ * @param {number} $index - The index of the list item you want to replace.
+ * @param {*} $value - The value you want to replace $index with.
+ * @returns {list} $list - The list with the value replaced or removed.
+ * @warn if an invalid index is supplied.
+ */
+/**
+ * Reverse a list (progressively enhanced for Sass 3.3)
+ * @param {list} $list - The list of values you want to reverse.
+ * @returns {list} $result - The reversed list.
+ */
+/**
+ * Get the opposite direction to a given value.
+ * @param {string} $dir - The direction you want the opposite of.
+ * @returns {string} - The opposite direction to $dir.
+ * @warn if an incorrect string is provided.
+ */
+/**
+ * Style an element as a column with a gutter.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [$cycle=0] - Easily create an nth column grid where $cycle equals the number of columns.
+ * @param {number} [$uncycle=0] - Undo a previous cycle value to allow for a new one.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * An alias for the column mixin.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * Get the width of a column and nothing else.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Get the gutter size of a column and nothing else.
+ * @param {number} [ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [gutter=jeet.gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * An alias for the column-width function.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * An alias for the column-gutter function.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * Style an element as a column without any gutters for a seamless row.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [cycle=0] - Easily create an nth column grid where cycle equals the number of columns.
+ * @param {number} [uncycle=0] - Undo a previous cycle value to allow for a new one.
+ */
+/**
+ * Reorder columns without altering the HTML.
+ * @param {number} [$ratios=0] - Specify how far along you want the element to move.
+ * @param {string} [$col-or-span=column] - Specify whether the element has a gutter or not.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Reset an element that has had shift() applied to it.
+ */
+/**
+ * View the grid and its layers for easy debugging.
+ * @param {string} [$color=black] - The background tint applied.
+ * @param {boolean} [$important=false] - Whether to apply the style as !important.
+ */
+/**
+ *  Alias for edit().
+ */
+/**
+ * Horizontally center an element.
+ * @param {number} [$max-width=1410px] - The max width the element can be.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ */
+/**
+ * Uncenter an element.
+ */
+/**
+ * Stack an element so that nothing is either side of it.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ * @param {boolean/string} [$align=false] - Specify the text align for the element.
+ */
+/**
+ * Unstack an element.
+ */
+/**
+ * Center an element on either or both axes.
+ * @requires A parent container with relative positioning.
+ * @param {string} [$direction=both] - Specify which axes to center the element on.
+ */
+/**
+ * Apply a clearfix to an element.
+ */
+@font-face {
+  font-family: 'Station';
+  src: url(/assets/Station.ttf);
+}
+
+/* line 57, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.blue1 {
+  background: #fcfff5;
+}
+
+/* line 58, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.blue2 {
+  background: #d1dbbd;
+}
+
+/* line 59, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.blue3 {
+  background: #91aa9d;
+}
+
+/* line 60, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.blue4 {
+  background: #3e606f;
+}
+
+/* line 61, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.blue5 {
+  background: #193441;
+}
+
+/* line 63, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.teal {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+/* line 64, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.gray {
+  background: #56cec7;
+  color: #fff;
+}
+
+/* line 65, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.yellow {
+  background: #e8b968;
+  color: #5b6869;
+}
+
+/* line 66, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.red {
+  background: #F85D5D;
+  color: #fff;
+}
+
+/* line 68, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.white {
+  background: #fff;
+  color: #5b6869;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 74, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.space-gray {
+  background: #571f8e;
+}
+
+/* line 75, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.green {
+  background: #71d7d1;
+}
+
+/* line 76, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.blue {
+  background: #3484d2;
+}
+
+/* line 78, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.black {
+  background: #1d1d1d;
+  color: #dcdcdc;
+}
+
+/* line 81, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+hr {
+  *zoom: 1;
+  width: auto;
+  max-width: 980px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+hr:before, hr:after {
+  content: '';
+  display: table;
+}
+/* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+hr:after {
+  clear: both;
+}
+
+/* line 90, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+hr {
+  margin-bottom: 15px;
+}
+
+/* line 94, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#about_hr {
+  border: 1px solid #193441;
+}
+
+/* line 98, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#overview_hr {
+  border: 1px solid #3e606f;
+}
+
+/* line 102, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#resume_hr {
+  border: 1px solid #91aa9d;
+}
+
+/* line 105, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social_hr {
+  border: 1px solid #d1dbbd;
+}
+
+/* line 109, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#contact_hr {
+  border: 1px solid #fcfff5;
+}
+
+/* line 113, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 116, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#centered {
+  text-align: center;
+}
+/* line 118, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#centered i {
+  padding-top: 5px;
+  color: #0e0f25;
+}
+
+/* line 124, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.center-section {
+  padding: 10px 0 0 0;
+  margin: 0 auto;
+  width: 380px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+/* line 140, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#about div div {
+  *zoom: 1;
+  width: auto;
+  max-width: 940px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0px 0 1px 0;
+  text-align: center;
+}
+/* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#about div div:before, #about div div:after {
+  content: '';
+  display: table;
+}
+/* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#about div div:after {
+  clear: both;
+}
+
+/* line 149, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.overview-panes {
+  *zoom: 1;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+.overview-panes:before, .overview-panes:after {
+  content: '';
+  display: table;
+}
+/* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+.overview-panes:after {
+  clear: both;
+}
+/* line 266, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+.overview-panes:first-child {
+  margin-left: auto;
+}
+/* line 270, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+.overview-panes:last-child {
+  margin-right: auto;
+}
+
+@media (min-width: 500px) {
+  /* line 154, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+  aside {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 22.75%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  aside:before, aside:after {
+    content: '';
+    display: table;
+  }
+  /* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  aside:after {
+    clear: both;
+  }
+  /* line 59, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  aside:last-child {
+    margin-right: 0%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 154, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+  aside {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 266, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  aside:first-child {
+    margin-left: auto;
+  }
+  /* line 270, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  aside:last-child {
+    margin-right: auto;
+  }
+}
+
+/* line 160, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#overview p, #overview h2 {
+  color: #0e0f25;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* line 170, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#resume div {
+  *zoom: 1;
+  width: auto;
+  max-width: 940px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+/* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#resume div:before, #resume div:after {
+  content: '';
+  display: table;
+}
+/* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#resume div:after {
+  clear: both;
+}
+/* line 174, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#resume div div {
+  text-align: center;
+  *zoom: 1;
+  width: auto;
+  max-width: 200px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#resume div div:before, #resume div div:after {
+  content: '';
+  display: table;
+}
+/* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#resume div div:after {
+  clear: both;
+}
+/* line 178, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#resume div div a i {
+  color: #00ee88;
+}
+/* line 181, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#resume div div a i:hover {
+  color: black;
+}
+
+/* line 191, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social {
+  *zoom: 1;
+  width: auto;
+  max-width: 940px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0px 0 1px 0;
+  text-align: center;
+}
+/* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#social .social:before, #social .social:after {
+  content: '';
+  display: table;
+}
+/* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#social .social:after {
+  clear: both;
+}
+@media (min-width: 500px) {
+  /* line 194, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+  #social .social > div {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #social .social > div:before, #social .social > div:after {
+    content: '';
+    display: table;
+  }
+  /* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #social .social > div:after {
+    clear: both;
+  }
+  /* line 59, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #social .social > div:last-child {
+    margin-right: 0%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 194, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+  #social .social > div {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 266, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #social .social > div:first-child {
+    margin-left: auto;
+  }
+  /* line 270, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #social .social > div:last-child {
+    margin-right: auto;
+  }
+}
+/* line 200, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .youtube {
+  color: #b31217;
+}
+/* line 202, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .youtube:hover {
+  color: black;
+}
+/* line 207, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .blog {
+  color: #f57d00;
+}
+/* line 209, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .blog:hover {
+  color: black;
+}
+/* line 214, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .linkedin {
+  color: #0976b4;
+}
+/* line 217, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .linkedin:hover {
+  color: black;
+}
+/* line 222, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .stack-overflow {
+  color: #fe7a15;
+}
+/* line 225, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .stack-overflow:hover {
+  color: black;
+}
+/* line 230, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .github {
+  color: #000000;
+}
+/* line 233, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons .github:hover {
+  color: #3e606f;
+}
+/* line 237, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#social .social #social-icons i {
+  padding: 5px;
+}
+
+/* line 248, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#contact div {
+  color: #dcdcdc;
+  *zoom: 1;
+  width: auto;
+  max-width: 940px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0px 0 1px 0;
+  text-align: center;
+}
+/* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#contact div:before, #contact div:after {
+  content: '';
+  display: table;
+}
+/* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#contact div:after {
+  clear: both;
+}
+@media (min-width: 500px) {
+  /* line 253, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+  #contact div div {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #contact div div:before, #contact div div:after {
+    content: '';
+    display: table;
+  }
+  /* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #contact div div:after {
+    clear: both;
+  }
+  /* line 59, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #contact div div:last-child {
+    margin-right: 0%;
+  }
+}
+@media (max-width: 499px) {
+  /* line 253, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+  #contact div div {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 266, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #contact div div:first-child {
+    margin-left: auto;
+  }
+  /* line 270, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+  #contact div div:last-child {
+    margin-right: auto;
+  }
+}
+/* line 257, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#contact div div input {
+  color: #000000;
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 268, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#contact div div textarea {
+  color: #000000;
+  height: 100px;
+  padding: 5px 0px 0px 5px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 279, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#contact div div .button {
+  display: inline;
+  float: left;
+  background: #FFCC02;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #585858;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  text-shadow: 1px 1px 1px #FFE477;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px #3D3D3D;
+  -webkit-box-shadow: 1px 1px 1px #3D3D3D;
+  -moz-box-shadow: 1px 1px 1px #3D3D3D;
+}
+/* line 296, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#contact div div .button:hover {
+  color: #333;
+  background-color: #EBEBEB;
+}
+/* line 303, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#contact div div #submitted {
+  color: #21cc38;
+  display: none;
+}
+
+/* line 313, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#footer div {
+  *zoom: 1;
+  width: auto;
+  max-width: 600px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 345, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#footer div:before, #footer div:after {
+  content: '';
+  display: table;
+}
+/* line 350, /Users/anorton/projects/rails/Website_Alex/vendor/assets/stylesheets/jeet/_grid.css.scss */
+#footer div:after {
+  clear: both;
+}
+/* line 317, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#footer div a {
+  color: #75cee2;
+}
+/* line 321, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#footer div a:hover {
+  color: #dcdcdc;
+}
+
+/* line 329, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 335, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.section {
+  padding: 0px 10px 20px 0;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 350px;
+}
+
+/* line 345, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.roller {
+  margin: 0 auto;
+  width: 50%;
+}
+/* line 350, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.roller img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+/* line 358, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.hsContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+/* line 365, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.hsContainer #arrow-down {
+  position: absolute;
+  bottom: 10vh;
+  left: 75vw;
+  width: 23vw;
+  color: #282828;
+}
+/* line 374, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.hsContainer #arrow-up {
+  position: absolute;
+  top: 10vh;
+  left: 25vw;
+  width: 23vw;
+  color: #282828;
+}
+/* line 383, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.hsContainer .hsContent {
+  color: black;
+}
+/* line 386, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.hsContainer .hsContent h2 {
+  position: absolute;
+  top: 1vh;
+  left: 71vw;
+  width: 25vw;
+}
+/* line 392, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.hsContainer .hsContent h2 .rssRow {
+  list-style-type: none;
+}
+/* line 395, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.hsContainer .hsContent h2 .rssRow a {
+  font-family: 'Station';
+  font-size: 20px;
+  color: #282828;
+}
+@media (max-width: 699px) {
+  /* line 395, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+  .hsContainer .hsContent h2 .rssRow a {
+    color: transparent;
+  }
+}
+
+/* line 412, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Slide 1 */
+/* line 422, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#slide-1 .bcg {
+  background-image: url("/assets/AJFullFace.jpg");
+}
+
+/* line 424, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#slide-2 .bcg {
+  background-image: url("/assets/AJTop.jpg");
+}
+
+/* Slide 5 */
+/* line 428, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#slide-5 {
+  position: relative;
+}
+
+/* line 429, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#slide-5 .bcg {
+  background-image: url("/assets/AJFullFace.jpg");
+}
+
+/* line 431, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#slide-5 .bcg2 {
+  background-image: url("/assets/AJTop.jpg");
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 438, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#slide-5 .bcg3 {
+  background: none;
+  background-color: #010101;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* line 445, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/application.css.scss */
+#skrollr-body {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 10, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 20, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 44, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 56, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 66, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 88, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 108, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 125, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 134, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 143, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 152, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 168, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sup {
+  top: -0.5em;
+}
+
+/* line 172, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 183, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 191, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 202, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 210, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 220, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 231, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 255, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 265, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 292, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 321, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 356, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 378, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 389, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 398, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 407, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 418, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, /Users/anorton/.rvm/gems/ruby-2.0.0-p598/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+td,
+th {
+  padding: 0;
+}
+/* line 16, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* line 20, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.top-box {
+  position: relative;
+  float: left;
+  width: 80%;
+  height: 20vh;
+  background: #6d45ff;
+}
+
+/* line 28, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.right-box {
+  position: relative;
+  background: #d0d447;
+  height: 80vh;
+  left: 80%;
+  width: 20%;
+}
+
+/* line 37, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.center-box {
+  position: absolute;
+  top: 20vh;
+  left: 20%;
+  background: #2E2F30;
+  height: 60vh;
+  width: 60%;
+}
+
+/* line 46, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.left-box {
+  background: #1d24ff;
+  float: left;
+  width: 20%;
+  height: 80vh;
+  position: absolute;
+  top: 20vh;
+}
+
+/* line 55, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.bottom-box {
+  position: relative;
+  left: 20%;
+  background: #ffac30;
+  height: 20vh;
+  width: 80%;
+}
+
+/* line 65, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+/* Common style */
+/* line 73, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* line 82, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+/* line 89, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure figcaption {
+  padding: 1em 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.8vw;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 99, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+/* line 104, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+/* line 114, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 122, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+/* line 127, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure h2 span {
+  font-weight: 900;
+}
+
+/* line 132, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+/* line 136, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* Individual effects */
+/*-----------------*/
+/***** Apollo ***** CENTER/
+/*-----------------*/
+/* line 147, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-apollo {
+  background: #3498db url("/assets/AJFullFace.jpg") bottom center no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  color: #000000;
+  opacity: 0.95;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+/* line 156, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-apollo h2 {
+  position: absolute;
+  bottom: 0;
+  left: 73%;
+  text-align: left;
+  color: #a700ea;
+}
+/* line 165, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-apollo p {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 3em;
+  padding: 0 1em;
+  max-width: 200px;
+  color: #000000;
+  border-right: 4px solid #db001c;
+  text-align: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+/* line 182, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-apollo figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 36, 255, 0.5);
+  content: '';
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+
+/* line 200, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-apollo:hover {
+  opacity: 0.6;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 206, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-apollo:hover figcaption::before {
+  -webkit-transform: scale3d(1, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+
+/* line 211, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-apollo:hover {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 218, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-apollo:hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/*---------------*/
+/***** Dexter *****/
+/*---------------*/
+/* line 231, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-dexter {
+  background: -webkit-linear-gradient(top, #258dc8 0%, #683c13 100%);
+  background: linear-gradient(to bottom, #258dc8 0%, #683c13 100%);
+  background: #3498db url("/assets/AJLeft.jpg") bottom left no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  color: #000000;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+/* line 238, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-dexter h2 {
+  position: absolute;
+  left: 10%;
+  text-align: center;
+  color: #002EFF;
+}
+/* line 245, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-dexter p {
+  padding: 2px;
+  position: absolute;
+  left: 10%;
+  bottom: 22vh;
+  color: #000000;
+  width: 80%;
+  font-weight: 600;
+  white-space: pre-line;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);
+}
+
+/* line 265, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-dexter:hover {
+  opacity: 0.9;
+}
+
+/* line 269, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-dexter figcaption::after {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  left: 10px;
+  width: auto;
+  height: -webkit-calc(50% - 30px);
+  height: calc(50% - 30px);
+  border: 4px solid #3b86ff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+/* line 285, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-dexter:hover figcaption::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 290, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-dexter figcaption {
+  padding: 3em;
+  text-align: left;
+}
+
+/* line 296, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-dexter:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/*-----------------*/
+/***** Steve *****/
+/*-----------------*/
+/* line 310, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve {
+  z-index: auto;
+  overflow: visible;
+  background: #3498db url("/assets/AJRight.jpg") center center no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  color: #000000;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
+  transform: perspective(1000px) translate3d(0, 0, 0);
+}
+/* line 320, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve h2 {
+  color: #526FFF;
+  position: relative;
+  margin-top: 2em;
+  padding: 0.25em;
+}
+
+/* line 329, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve:before,
+figure.effect-steve h2:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  content: '';
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+/* line 342, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve:before {
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+
+/* line 347, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve figcaption {
+  z-index: 1;
+}
+
+/* line 353, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve h2,
+figure.effect-steve p {
+  background: #fff;
+  color: #2d434e;
+}
+
+/* line 359, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve h2:before {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 363, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve p {
+  margin-top: 1em;
+  padding: 0.5em;
+  font-weight: 800;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(0.9, 0.9, 1);
+  transform: scale3d(0.9, 0.9, 1);
+}
+
+/* line 374, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve:hover:before {
+  opacity: 1;
+}
+
+/* line 378, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve:hover {
+  -webkit-transform: perspective(1000px) translate3d(0, 0, 0px);
+  transform: perspective(1000px) translate3d(0, 0, 0px);
+}
+
+/* line 383, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve:hover h2:before {
+  opacity: 0;
+}
+
+/* line 387, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-steve:hover p {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+/*-----------------*/
+/***** Selena *****/
+/*-----------------*/
+/* line 402, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-selena {
+  background: #3498db url("/assets/AJBottom.jpg") center center no-repeat;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+  color: #000000;
+  opacity: 0.95;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+/* line 411, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-selena:hover {
+  -webkit-transform: scale3d(0.99, 0.95, 1);
+  transform: scale3d(0.99, 0.95, 1);
+}
+/* line 415, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-selena h2 {
+  padding-left: 10px;
+  color: #31E800;
+  text-align: left;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+/* line 428, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-selena p {
+  padding-left: 10px;
+  text-align: left;
+  color: #0037FF;
+  word-wrap: break-word;
+  width: 200px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+/* line 444, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-selena:hover h2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 450, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-selena:hover p {
+  opacity: 1;
+  color: #27248F;
+  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0);
+  transform: perspective(1000px) rotate3d(1, 0, 0, 0);
+}
+
+/*-----------------*/
+/***** Winston *****/
+/*-----------------*/
+/* line 470, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston {
+  padding: 0;
+  margin: 0;
+  background: #3498db url("/assets/AJTop.jpg") center center no-repeat;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+  color: #000000;
+  text-align: right;
+  -webkit-transition: opacity 0.45s;
+  transition: opacity 0.45s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 481, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston p {
+  position: absolute;
+  right: 2%;
+  text-align: right;
+  bottom: 0;
+  padding: 0 1.5em 1% 0;
+}
+/* line 489, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston h2 {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  padding-right: 10px;
+  color: #FF7A00;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
+}
+/* line 501, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston:hover {
+  opacity: 0.97;
+}
+
+/* line 508, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  content: '';
+}
+
+/* line 522, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston a {
+  margin: 0 10px;
+  color: #ff4854;
+  font-size: 170%;
+}
+
+/* line 529, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston a:hover,
+figure.effect-winston a:focus {
+  color: #07E885;
+}
+
+/* line 533, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston p a i {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+}
+
+/* line 541, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston:hover h2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 546, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston:hover figcaption::before {
+  opacity: 0.7;
+  -webkit-transform: rotate3d(0, 0, 0, 20deg);
+  transform: rotate3d(0, 0, 0, 20deg);
+}
+
+/* line 552, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston:hover p i {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 558, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston:hover p a:nth-child(3) i {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+/* line 563, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston:hover p a:nth-child(2) i {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 568, /Users/anorton/projects/rails/Website_Alex/app/assets/stylesheets/static_pages.css.scss */
+figure.effect-winston:hover p a:first-child i {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
