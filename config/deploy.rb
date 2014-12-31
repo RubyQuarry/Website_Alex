@@ -2,7 +2,7 @@
 lock '3.2.1'
 
 set :application, 'appleJuiceScholars'
-set :repo_url, 'git@github.com:/RubyQuarry/blog_alex.git'
+set :repo_url, 'git@github.com:/RubyQuarry/Website_Alex.git'
 set :rvm_ruby_version, '2.0.0'
 set :stage, :production
 
