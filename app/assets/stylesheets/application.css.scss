@@ -101,7 +101,6 @@ hr{
 #resume_hr{
   @include section-border-bar($blue3);
 }
-
 #social_hr{
   @include section-border-bar($blue2);
 }
@@ -326,14 +325,11 @@ aside{
 }
 
 
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
 }
-
 
 .section {
   padding: 0px 10px 20px 0;
@@ -342,8 +338,6 @@ aside{
   min-height: 350px;
 
 }
-
-
 
 
 // for slideshow
@@ -426,9 +420,8 @@ aside{
 /* Slide 1 */
 #slide-1 .bcg { background-image: url(asset-path("AJFullFace.jpg"));}
 
-#slide-2 .bcg { background-image: url(asset-path("AJLeft.jpg"));}
+#slide-2 .bcg { background-image: url(asset-path("AJTop.jpg"));}
 
-#slide-3 .bcg { background-image: url(asset-path("AJLeft.jpg"));}
 
 /* Slide 5 */
 #slide-5 { position: relative; }
