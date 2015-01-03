@@ -52,8 +52,8 @@ Rails.application.configure do
   {
     :address            => 'smtp.mandrillapp.com',
     :port               => 587,
-    :user_name          => 'ajn123@vt.edu',
-    :password           => 'ViRckrGg5Ai5I7a6KFN1gA'
+    :user_name          => ENV['MANDRILL_API_USERNAME'],
+    :password           => ENV['MANDRILL_API_KEY']
   }
 
 
