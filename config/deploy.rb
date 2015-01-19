@@ -25,10 +25,10 @@ set :stage, :production
 # set :pty, true
 
 # Default value for :linked_files is []
-# set :linked_files, %w{config/database.yml}
+  set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+  set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -36,15 +36,13 @@ set :stage, :production
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+
+after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
 
   desc 'Restart application'
   task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
-    end
-      invoke 'unicorn:restart'
+    invoke 'unicorn:legacy_restart'
   end
 
   after :publishing, :restart
