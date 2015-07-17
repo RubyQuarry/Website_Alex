@@ -100,10 +100,10 @@ Rails.application.configure do
   ActionMailer::Base.raise_delivery_errors = true
   ActionMailer::Base.smtp_settings =
   {
-    :address            => 'smtp.mandrillapp.com',
+    :address            => 'smtp.google.com',
     :port               => 587,
-    :user_name          => ENV['MANDRILL_API_USERNAME'],
-    :password           => ENV['MANDRILL_API_KEY']
+    :user_name          => ENV['GMAIL_USERNAME'],
+    :password           => ENV['GMAIL_PASSWORD']
   }
 
 end
