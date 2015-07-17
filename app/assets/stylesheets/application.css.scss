@@ -109,7 +109,15 @@ hr{
   @include section-border-bar($blue1);
 }
 
-a{ text-decoration: none; }
+a{ 
+  text-decoration: none; 
+}
+#email_link
+{
+  font-size: 130%;
+  color: #FFF;
+}
+
 
 #centered
 {
