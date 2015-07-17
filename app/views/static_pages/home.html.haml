@@ -106,15 +106,7 @@
       Contact
   %hr#contact_hr
   %div
-    %div
-      =form_for(@message, remote: true) do |f|
-        =f.text_field :name, placeholder: "Name - What your friends call you"
-        =f.text_field :email, placeholder: "Email - Where you can be reached"
-        =f.text_area  :content, placeholder: "Comment - What you want to say"
-        =f.submit "Submit", class: 'button'
-      %i.fa.fa-4x.fa-check-square-o#submitted
-    %div
-      Feel free to contact me at ajn123@vt.edu
+    Feel free to contact me at ajn123@vt.edu
 %div.section.black#footer
   %div.center-section
     %h1
