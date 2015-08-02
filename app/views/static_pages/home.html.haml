@@ -2,76 +2,78 @@
   .bcg
     .hsContainer
       .hsContent
-        %h2#quote
-      =link_to("#about") do
-        %i#arrow-down.fa.fa-5x.fa-arrow-circle-down
+        %h2#textBox#quote
+          Hello,, my name is Alex "AJ" Norton.  I am a recent graduate of Virginia Tech
+          seeking an entry level software engineer position.  Feel free to connect with me, view my work and resume below!  Send me an email if you want to make friends or work together.
+        %div
+          
 
 .navBar
-  - navArray = ["About", "Goals", "Projects", "Social", "CV", "Contact", "Thanks"]
-  - tags = ["about", "overview", "projects", "social", "resume", "contact", "footer"]
+  - navArray = ["Projects", "Social", "CV", "Contact", "Thanks"]
+  - tags = ["projects", "social", "resume", "contact", "footer"]
   %ul
     - navArray.each_with_index do |item, index|
       %li
         =link_to("##{tags[index]}") do 
           =item
+/ %div.section.blue1#about
+/   %div.center-section
+/     %h1
+/       About
+/   %hr#about_hr
+/   %div
+/     %div
+/       %p
+/         A question I always wondered was what is the meaning of life? It seemed that from childhood onward this
+/         question is pondered but the answer is never really found. I tried to find the answer but anything I came
+/         up with seemed meaningless and desolate. It took me a long time to realize that the purpose of life is to
+/         not find the meaning in yours, but to help others define their reason for living. It is through helping
+/         others that we achieve our goals in life, that is the ultimate satisfaction. You can never give back enough
+/         in this world for all the help you have been given to place you right before these words. My name is A.J. Norton
+/         and I try to give back to the community by teaching others how to program through my Youtube channel.  I also enjoy
+/         running and writing Ruby code. Feel free to send a message below and tell me what you do to give back to the world.
+/         I will try my best to get back to you.
 
-%div.section.blue1#about
-  %div.center-section
-    %h1
-      About
-  %hr#about_hr
-  %div
-    %div
-      %p
-        A question I always wondered was what is the meaning of life? It seemed that from childhood onward this
-        question is pondered but the answer is never really found. I tried to find the answer but anything I came
-        up with seemed meaningless and desolate. It took me a long time to realize that the purpose of life is to
-        not find the meaning in yours, but to help others define their reason for living. It is through helping
-        others that we achieve our goals in life, that is the ultimate satisfaction. You can never give back enough
-        in this world for all the help you have been given to place you right before these words. My name is A.J. Norton
-        and I try to give back to the community by teaching others how to program through my Youtube channel.  I also enjoy
-        running and writing Ruby code. Feel free to send a message below and tell me what you do to give back to the world.
-        I will try my best to get back to you.
-%div.section.blue2#overview
-  %div.center-section
-    %h1
-      Overview
-  %hr#overview_hr
-  %div.overview-panes
-    %aside
-      %div#centered
-        %i.fa.fa-5x.fa-mobile
-      %div#work
-        %h2
-          Code
-        %p
-          I enjoy connecting others from our pocket paradise.  I previously
-          started out with Windows Phone development and have progressed to iOS.
-    %aside
-      %div#centered
-        %i.fa.fa-5x.fa-microphone
-      %div#work
-        %h2
-          Voice
-        %p
-          I try to channel my inner Morgan Freeman voice with podcasts and
-          Youtube videos of my learnings in (mostly) Computer Science.
-    %aside
-      %div#centered
-        %i.fa.fa-5x.fa-location-arrow
-      %div#work
-        %h2
-          Travel
-        %p
-          I want to travel everywhere.  Inspiration can strike at anytime.
-    %aside
-      %div#centered
-        %i.fa.fa-5x.fa-clock-o
-      %div#work
-        %h2
-          Beat the clock
-        %p
-          My goal is to run a mile under 4 minutes and one day coach.
+/ %div.section.blue2#overview
+/   %div.center-section
+/     %h1
+/       Overview
+/   %hr#overview_hr
+/   %div.overview-panes
+/     %aside
+/       %div#centered
+/         %i.fa.fa-5x.fa-mobile
+/       %div#work
+/         %h2
+/           Code
+/         %p
+/           I enjoy connecting others from our pocket paradise.  I previously
+/           started out with Windows Phone development and have progressed to iOS.
+/     %aside
+/       %div#centered
+/         %i.fa.fa-5x.fa-microphone
+/       %div#work
+/         %h2
+/           Voice
+/         %p
+/           I try to channel my inner Morgan Freeman voice with podcasts and
+/           Youtube videos of my learnings in (mostly) Computer Science.
+/     %aside
+/       %div#centered
+/         %i.fa.fa-5x.fa-location-arrow
+/       %div#work
+/         %h2
+/           Travel
+/         %p
+/           I want to travel everywhere.  Inspiration can strike at anytime.
+/     %aside
+/       %div#centered
+/         %i.fa.fa-5x.fa-clock-o
+/       %div#work
+/         %h2
+/           Beat the clock
+/         %p
+/           My goal is to run a mile under 4 minutes and one day coach.
 
 %div.section.projects#projects
   %div.center-section
@@ -108,8 +110,8 @@
     %div#social-icons
       =link_to("https://www.youtube.com/user/AppleJuiceScholars") do
         %i.fa.fa-5x.fa-youtube-square.youtube
-      =link_to("http://applejuicescholars.com/") do
-        %i.fa.fa-5x.fa-stack-exchange.blog
+      / =link_to("http://applejuicescholars.com/") do
+      /   %i.fa.fa-5x.fa-stack-exchange.blog
       %div
         =link_to("https://github.com/ajn123") do
           %i.fa.fa-3x.fa-github-square.github

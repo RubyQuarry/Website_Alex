@@ -22,17 +22,17 @@
 
 ///  NOT USED: //= require owl.carousel.min
 //
-$(document).ready(function() {
-    $('#quote').rssfeed('http://www.quotesdaddy.com/feed/tagged/Inspirational', {
-      limit: 1,
-      snippet:false,
-      content: false,
-      header: false,
-      media : false,
-      date: false,
-      titletag : "p"
-    });
-});
+// $(document).ready(function() {
+//     $('#quote').rssfeed('http://www.quotesdaddy.com/feed/tagged/Inspirational', {
+//       limit: 1,
+//       snippet:false,
+//       content: false,
+//       header: false,
+//       media : false,
+//       date: false,
+//       titletag : "p"
+//     });
+// });
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
