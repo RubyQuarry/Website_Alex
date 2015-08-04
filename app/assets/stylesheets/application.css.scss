@@ -121,6 +121,7 @@ hr{
 a{ 
   text-decoration: none; 
 }
+
 #email_link
 {
   font-size: 180%;
@@ -153,24 +154,22 @@ h2{
 
 .navBar{
   height: 6vh;
-  font-weight: 900;
-  @include center(550px);
+  @include center(450px);
   ul{
-   list-style-type: none;
-     li{
-       a:link {
-        color: #2c3e50;
-       }
-
-      display: inline;
-      padding: 16px 15px 5px 15px;
-       &:hover {
+    list-style-type: none;
+      li{
+      padding: 16px 16px 5px 16px;
+        a:link {
+          color: #2c3e50;
+        }
+        display: inline;
+        &:hover {
           $transtionTime: 0.6;
           background: #95a5a6;
           -webkit-transition: background 0.6s;
           transition: background transitionTime;
         }
-     }
+      }
   }
 }
 
@@ -431,8 +430,8 @@ aside{
   width: 100%;
   height: 94vh;
   overflow: hidden;
-  position: relative;
 
+  display: block;
   #arrow-down
   {
     position: absolute;
@@ -442,14 +441,7 @@ aside{
     color: #282828;
   }
 
-  #arrow-up
-  {
-    position: absolute;
-    top: 10vh;
-    left: 25vw;
-    width: 23vw;
-    color: #2ecc71;
-  }
+  
 
   .hsContent
   {
@@ -457,10 +449,8 @@ aside{
 
     h2
     {
-      position: absolute;
-      top: 30vh;
-      left: 30vw;
-      width: 28vw;
+      margin: 0 auto;
+      width: 350px;
       border-radius: 17px;
 
       padding: 10px;
@@ -481,16 +471,12 @@ aside{
           }
         }
       }
-
-
     }
 
       div 
       {
         border: 4px solid #e74c3c;
-        position: absolute;
-        top: 30vh;
-        left: 60vw;
+        margin: 50px auto;
         width: 250px;
         height: 250px;
         border-radius: 150px;
