@@ -100,18 +100,18 @@ hr{
 }
 
 #about_hr{
-  @include section-border-bar($blue5);
+  @include section-border-bar($blue1);
 }
 
 #overview_hr{
-  @include section-border-bar($blue4);
+  @include section-border-bar($blue1);
 }
 
 #resume_hr{
-  @include section-border-bar($blue3);
+  @include section-border-bar($blue1);
 }
 #social_hr{
-  @include section-border-bar($blue2);
+  @include section-border-bar($blue1);
 }
 
 #contact_hr{
@@ -125,7 +125,7 @@ a{
 #email_link
 {
   font-size: 180%;
-  color: #2c3e50;
+  color: #000;
 }
 
 
@@ -289,22 +289,25 @@ aside{
     @include content_block;
       >div
       {
+        h1{
+          padding: 0;
+        }
+        margin-top: 5px; 
         @include media_query_columns(1/3);
 
           i{
-            margin-top: 40px;
+            margin-top: 90px;
             color: #2c3e50;
-            &:hover { color: #000;}
+            &:hover { color: #000; }
           }
           img {
+             margin-top: 55px; 
               border: 5px solid #e74c3c;
                border-radius: 25px;
             &:hover {
                border: 7px solid #2ecc71;
             }
           }
-
-        
       }
   }
 }
@@ -483,12 +486,8 @@ aside{
         background-color: #ecf0f1;
         border: 5px solid #3498db;
         background: url(asset-path("aj.norton copy.jpg")) no-repeat center center;
-            
-
 
       }
-
-
   }
 }
 
