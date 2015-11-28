@@ -16,18 +16,21 @@
  */
 @import 'jeet/index';
 
+
+$projects: #F4EDF6; // projects
+
 $black: #000000;  
 $blue1: #FCFFF5;  
 $blue2: #D1DBBD;
-$blue3: #2ABB9B; // Social
-$blue4: #e67e22; // Resume 
-$blue5: #9b59b6; // Contacts
+$blue3: #F8D9D5; // Social
+$blue4: #D8E2EC; // Resume 
+$blue5: #F2E4F9; // Contacts
 
 * {
   font-size: 16px;
 }
 
-$projects: #3498db;
+
 
 @font-face{
   font-family:'Station';
@@ -57,7 +60,7 @@ $projects: #3498db;
 }
 
 @mixin black-text{
-  color: #dcdcdc;
+  color: #000000;
 }
 
 .blue1{ background: $blue1; }
@@ -100,7 +103,7 @@ hr{
 }
 
 #about_hr{
-  @include section-border-bar($blue1);
+  @include section-border-bar(#000000);
 }
 
 #overview_hr{
@@ -111,7 +114,7 @@ hr{
   @include section-border-bar($blue1);
 }
 #social_hr{
-  @include section-border-bar($blue1);
+  @include section-border-bar(#3B3C3D);
 }
 
 #contact_hr{
@@ -143,7 +146,7 @@ a{
   margin: 0 auto;
   width: 380px;
   text-align: center;
-  font-weight: 900;
+  font-weight: 300;
   font-size: 18px;
 }
 
@@ -153,21 +156,20 @@ h2{
 }
 
 .navBar{
-  height: 6vh;
   @include center(450px);
   ul{
     list-style-type: none;
       li{
-      padding: 16px 16px 5px 16px;
+      padding: 0px 12px;
         a:link {
           color: #2c3e50;
         }
         display: inline;
         &:hover {
-          $transtionTime: 0.6;
-          background: #95a5a6;
+          $transitionTime: 0.6;
+          background: #53DF83;
           -webkit-transition: background 0.6s;
-          transition: background transitionTime;
+          transition: background $transitionTime;
         }
       }
   }
@@ -240,7 +242,7 @@ aside{
     #social-icons
     {
       .youtube
-      { color: #b31217;
+      { color: #cd201f;
         &:hover
         {
           color: $black;
@@ -255,7 +257,7 @@ aside{
       }
       .linkedin
       {
-        color: #1F3A93;
+        color: #0077b5;
         &:hover
         {
           color: $black;
@@ -274,7 +276,7 @@ aside{
         color: #000000;
         &:hover
         {
-          color: $blue4;
+          color: #4183c4;
         }
       }
       i{ padding: 5px; }
@@ -297,8 +299,8 @@ aside{
 
           i{
             margin-top: 90px;
-            color: #2c3e50;
-            &:hover { color: #000; }
+            color: #000;
+            &:hover { color: #00a0dc; }
           }
           img {
              margin-top: 55px; 
