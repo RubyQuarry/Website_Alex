@@ -438,7 +438,7 @@ aside{
 
 .hsContainer {
   width: 100%;
-  height: 94vh;
+  height: 100%;
   overflow: hidden;
 
   display: block;
@@ -456,6 +456,7 @@ aside{
   .hsContent
   {
     color: $black;
+    margin-bottom: 50px; 
 
     h2
     {
