@@ -1,5 +1,5 @@
 # Website Alex
-You can view my website at [ajnorton.com](http://ajnorton.com/)
+You can view my website at [ajnorton.com](http://www.ajnorton.com/)
 
 
 
